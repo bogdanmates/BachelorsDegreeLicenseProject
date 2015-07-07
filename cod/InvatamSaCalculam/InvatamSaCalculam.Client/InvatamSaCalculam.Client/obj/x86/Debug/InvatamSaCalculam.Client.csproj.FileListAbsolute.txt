@@ -1,0 +1,93 @@
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\bin\Debug\InvatamSaCalculam.Client.exe.config
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.csprojResolveAssemblyReference.cache
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\LandingPages\Helpers\TopHeader\TopHeaderView.baml
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\LandingPages\Helpers\TopHeader\TopHeaderView.g.cs
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\LandingPages\Helpers\TopPanel\TopPanelView.g.cs
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\LandingPages\Helpers\TopPlayer\TopPlayerView.g.cs
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client_Content.g.cs
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client_MarkupCompile.cache
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client_MarkupCompile.lref
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\bin\Debug\InvatamSaCalculam.Client.exe
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\bin\Debug\InvatamSaCalculam.Client.pdb
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\bin\Debug\Microsoft.Practices.Prism.pdb
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\bin\Debug\Microsoft.Practices.Prism.xml
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\LandingPages\Helpers\TopPanel\TopPanelView.baml
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\LandingPages\Helpers\TopPlayer\TopPlayerView.baml
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.g.resources
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.EquationsLandingPages.AddEquation.resources
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.EquationsLandingPages.DiffEquation.resources
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.EquationsLandingPages.DivEquation.resources
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.EquationsLandingPages.MulEquation.resources
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.LandingPages.Blocks.resources
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.LandingPages.HallOfFame.resources
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.LandingPages.Hangman.resources
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.LandingPages.Login.resources
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.LandingPages.MainMenu.resources
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.LandingPages.ManageStudents.resources
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.LandingPages.Puzzle.resources
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.LandingPages.PuzzleMenu.resources
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.LandingPages.Register.resources
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.LandingPages.Top.resources
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.MainPage.resources
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.OperationsLandingPages.Add.resources
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.OperationsLandingPages.Diff.resources
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.OperationsLandingPages.Div.resources
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.OperationsLandingPages.Mul.resources
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.Properties.Resources.resources
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.TestsLandingPages.AddTest.resources
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.TestsLandingPages.DiffTest.resources
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.TestsLandingPages.DivTest.resources
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.TestsLandingPages.MulTest.resources
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.csproj.GenerateResource.Cache
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.exe
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.pdb
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\bin\Debug\Microsoft.CSharp.dll
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\bin\Debug\PresentationCore.dll
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\bin\Debug\PresentationFramework.dll
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\bin\Debug\InvatamSaCalculam.Client.exe.config
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.exe
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.pdb
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\bin\Debug\InvatamSaCalculam.Client.exe
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\bin\Debug\InvatamSaCalculam.Client.pdb
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\bin\Debug\Microsoft.CSharp.dll
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\bin\Debug\PresentationCore.dll
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\bin\Debug\PresentationFramework.dll
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.csprojResolveAssemblyReference.cache
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\LandingPages\Helpers\TopHeader\TopHeaderView.baml
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\LandingPages\Helpers\TopHeader\TopHeaderView.g.cs
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\LandingPages\Helpers\TopPanel\TopPanelView.g.cs
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\LandingPages\Helpers\TopPlayer\TopPlayerView.g.cs
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client_Content.g.cs
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client_MarkupCompile.cache
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client_MarkupCompile.lref
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\LandingPages\Helpers\TopPanel\TopPanelView.baml
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\LandingPages\Helpers\TopPlayer\TopPlayerView.baml
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.g.resources
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.EquationsLandingPages.AddEquation.resources
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.EquationsLandingPages.DiffEquation.resources
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.EquationsLandingPages.DivEquation.resources
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.EquationsLandingPages.MulEquation.resources
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.LandingPages.Blocks.resources
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.LandingPages.HallOfFame.resources
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.LandingPages.Hangman.resources
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.LandingPages.Login.resources
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.LandingPages.MainMenu.resources
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.LandingPages.ManageStudents.resources
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.LandingPages.Puzzle.resources
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.LandingPages.PuzzleMenu.resources
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.LandingPages.Register.resources
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.LandingPages.Top.resources
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.MainPage.resources
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.OperationsLandingPages.Add.resources
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.OperationsLandingPages.Diff.resources
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.OperationsLandingPages.Div.resources
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.OperationsLandingPages.Mul.resources
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.Properties.Resources.resources
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.TestsLandingPages.AddTest.resources
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.TestsLandingPages.DiffTest.resources
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.TestsLandingPages.DivTest.resources
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.TestsLandingPages.MulTest.resources
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Client\InvatamSaCalculam.Client\obj\x86\Debug\InvatamSaCalculam.Client.csproj.GenerateResource.Cache

@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MathAssistant.Client.Common.BusinessStructure" Collapsed="true">
+    <Position X="12.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAACABAAQAACAgAAQBAAAACQAAQAAAAAAg=</HashCode>
+      <FileName>Common\BusinessStructure.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathAssistant.Client.Common.PasswordHandler" Collapsed="true">
+    <Position X="12.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAABAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Common\PasswordHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathAssistant.Client.Common.QuestionHandler" Collapsed="true">
+    <Position X="10.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEEAAAABAACAAAAgBAACAAGIAAgwAgAEGATAAwQQAAA=</HashCode>
+      <FileName>Common\QuestionHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathAssistant.Client.EquationsLandingPages.AddEquation" Collapsed="true">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAEAgAAAACIAABAAAACAAABCABCAAAQAAAAAAAYAIAA=</HashCode>
+      <FileName>EquationsLandingPages\AddEquation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathAssistant.Client.EquationsLandingPages.DiffEquation" Collapsed="true">
+    <Position X="5.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAEAgAQAACIAABAAAAqAAABCAAQAAAAAAAAAAAYAIAA=</HashCode>
+      <FileName>EquationsLandingPages\DiffEquation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathAssistant.Client.EquationsLandingPages.DivEquation" Collapsed="true">
+    <Position X="10.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>6QEAgEAAAWIAEBAAACCAAgBGBAAAAAAAEAAAAA4AIAA=</HashCode>
+      <FileName>EquationsLandingPages\DivEquation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathAssistant.Client.EquationsLandingPages.MulEquation" Collapsed="true">
+    <Position X="8.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAEAgAAAACIAABAAAACAAABCAAAAAAAAEAAAAgYAIIA=</HashCode>
+      <FileName>EquationsLandingPages\MulEquation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathAssistant.Client.LandingPages.Blocks" Collapsed="true">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAwCAAgQQCwBAgKAABSJCAACAAQYAADAAAQgBBACEAA=</HashCode>
+      <FileName>LandingPages\Blocks.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathAssistant.Client.LandingPages.Question" Collapsed="true">
+    <Position X="8.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LandingPages\Blocks.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathAssistant.Client.LandingPages.HallOfFame" Collapsed="true">
+    <Position X="5.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAkAMhAGgyQAAZAEABSAYBACGgAAAAAAQAAgAQBAEAA=</HashCode>
+      <FileName>LandingPages\HallOfFame.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathAssistant.Client.LandingPages.Hangman" Collapsed="true">
+    <Position X="7" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAECIhgEACgJEkCBABCISAAKAAgABQCACAAAEgJCAAQ=</HashCode>
+      <FileName>LandingPages\Hangman.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathAssistant.Client.LandingPages.Login" Collapsed="true">
+    <Position X="10.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAhAAAAQACQAABAAAACAAAACAAAACAAEAAAAAABgAEA=</HashCode>
+      <FileName>LandingPages\Login.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathAssistant.Client.LandingPages.MainMenu" Collapsed="true">
+    <Position X="12.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DIBAKAQECKQBUgsAAECCChADgOAAgAgEBAEQCCANIAI=</HashCode>
+      <FileName>LandingPages\MainMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathAssistant.Client.LandingPages.ManageStudents" Collapsed="true">
+    <Position X="5.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>GAAIAAEAACoABACAAQCAggACAEEQEACAAYEQAJgABEA=</HashCode>
+      <FileName>LandingPages\ManageStudents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathAssistant.Client.LandingPages.Puzzle" Collapsed="true">
+    <Position X="5.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAFAahgEICQABYADBBCMSEoqAC0RTgAAeATgGwJAAAQ=</HashCode>
+      <FileName>LandingPages\Puzzle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathAssistant.Client.LandingPages.PuzzleMenu" Collapsed="true">
+    <Position X="7" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BABASAAAACAgAAAABACCMN8SBDZACAAACBMYAEAAkIA=</HashCode>
+      <FileName>LandingPages\PuzzleMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathAssistant.Client.LandingPages.Register" Collapsed="true">
+    <Position X="12.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAhAAAEQACAAABAAAACQAAACAAAAAAAAAAAAAAAgEFE=</HashCode>
+      <FileName>LandingPages\Register.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathAssistant.Client.LandingPages.Top" Collapsed="true">
+    <Position X="14" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAQACAAAACAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>LandingPages\Top.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathAssistant.Client.LandingPages.Helpers.dsStudents" Collapsed="true">
+    <Position X="14" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgIAAAAAAwAAAAJABAAAQAAAAAgCQBgAAAAAAAEABBA=</HashCode>
+      <FileName>LandingPages\Helpers\dsStudents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathAssistant.Client.LandingPages.Helpers.ImageConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LandingPages\Helpers\ImageConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MathAssistant.Client.LandingPages.Helpers.ViewModelBase" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LandingPages\Helpers\ViewModelBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MathAssistant.Client.LandingPages.Helpers.TopHeader.TopHeaderView" Collapsed="true">
+    <Position X="5.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LandingPages\Helpers\TopHeader\TopHeaderView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathAssistant.Client.LandingPages.Helpers.TopPanel.TopPanelView" Collapsed="true">
+    <Position X="7" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LandingPages\Helpers\TopPanel\TopPanelView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathAssistant.Client.LandingPages.Helpers.TopPanel.TopPanelViewModel" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIgAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>LandingPages\Helpers\TopPanel\TopPanelViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathAssistant.Client.LandingPages.Helpers.TopPlayer.TopPlayerView" Collapsed="true">
+    <Position X="8.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LandingPages\Helpers\TopPlayer\TopPlayerView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathAssistant.Client.LandingPages.Helpers.TopPlayer.TopPlayerViewModel" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQFLAAAAQAAABgAAQQIAAGAAAAApAIAAAQAAAQABAg=</HashCode>
+      <FileName>LandingPages\Helpers\TopPlayer\TopPlayerViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathAssistant.Client.OperationsLandingPages.Add" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>8ERAQAMEACQAADAAAACgAAACBBAAAAQACAQAAAIAIAA=</HashCode>
+      <FileName>OperationsLandingPages\Add.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathAssistant.Client.OperationsLandingPages.Diff" Collapsed="true">
+    <Position X="14" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YEBEQAcEACQAADAAAAigAAACBBAAAAAACAAAAAIAAAA=</HashCode>
+      <FileName>OperationsLandingPages\Diff.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathAssistant.Client.OperationsLandingPages.Div" Collapsed="true">
+    <Position X="8.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>8UBAQAMEACQAADAAAACgAAACBBAAAAAACAQAAAoAQgA=</HashCode>
+      <FileName>OperationsLandingPages\Div.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathAssistant.Client.OperationsLandingPages.Mul" Collapsed="true">
+    <Position X="7" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>8GRAQAMEACQAADAAAACgAAACBBAAAAAACAAAAAIAAIA=</HashCode>
+      <FileName>OperationsLandingPages\Mul.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathAssistant.Client.TestsLandingPages.AddTest" Collapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAgQIIEwv8f75ABgASIAFAKgAAAEAAAEATe6RIADAA=</HashCode>
+      <FileName>TestsLandingPages\AddTest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathAssistant.Client.TestsLandingPages.DiffTest" Collapsed="true">
+    <Position X="7" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAgQIIEwv8f75ABgASIAFAKgAAAEAAAEATeeRIADAA=</HashCode>
+      <FileName>TestsLandingPages\DiffTest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathAssistant.Client.TestsLandingPages.DivTest" Collapsed="true">
+    <Position X="12.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAgQKIEwv8f75ABgASIAFAKgAAAEAAAEATeaRIADAA=</HashCode>
+      <FileName>TestsLandingPages\DivTest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathAssistant.Client.TestsLandingPages.MulTest" Collapsed="true">
+    <Position X="10.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAgQIIEwv8f75ABgASIAFAKgAAAEAAAEATeaRIADQA=</HashCode>
+      <FileName>TestsLandingPages\MulTest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathAssistant.Client.MainPage" Collapsed="true">
+    <Position X="14" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QcgggCGJEiABCagZIACQgoFCESAAAcBEAEQFCiEBZAE=</HashCode>
+      <FileName>MainPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MathAssistant.Client.Program" Collapsed="true">
+    <Position X="14" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="MathAssistant.Client.Common.PuzzleSize" Collapsed="true">
+    <Position X="7" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Common\BusinessStructure.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MathAssistant.Client.Common.Operations" Collapsed="true">
+    <Position X="5.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAMAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Common\BusinessStructure.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

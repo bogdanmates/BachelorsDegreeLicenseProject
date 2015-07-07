@@ -1,0 +1,1385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{875E2789-2FEB-4D81-A7B0-98BFA960650F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InvatamSaCalculam.Client</RootNamespace>
+    <AssemblyName>InvatamSaCalculam.Client</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="AxInterop.WMPLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AxInterop.WMPLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.WMPLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Interop.WMPLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Prism, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.Practices.Prism.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationUI, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\BusinessStructure.cs" />
+    <Compile Include="Common\PasswordHandler.cs" />
+    <Compile Include="Common\QuestionHandler.cs" />
+    <Compile Include="EquationsLandingPages\AddEquation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EquationsLandingPages\AddEquation.Designer.cs">
+      <DependentUpon>AddEquation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EquationsLandingPages\DiffEquation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EquationsLandingPages\DiffEquation.Designer.cs">
+      <DependentUpon>DiffEquation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EquationsLandingPages\DivEquation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EquationsLandingPages\DivEquation.Designer.cs">
+      <DependentUpon>DivEquation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EquationsLandingPages\MulEquation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EquationsLandingPages\MulEquation.Designer.cs">
+      <DependentUpon>MulEquation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LandingPages\Blocks.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LandingPages\Blocks.Designer.cs">
+      <DependentUpon>Blocks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LandingPages\HallOfFame.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LandingPages\HallOfFame.Designer.cs">
+      <DependentUpon>HallOfFame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LandingPages\Hangman.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LandingPages\Hangman.Designer.cs">
+      <DependentUpon>Hangman.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LandingPages\Helpers\dsStudents.cs">
+      <DependentUpon>dsStudents.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LandingPages\Helpers\dsStudents.Designer.cs">
+      <DependentUpon>dsStudents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LandingPages\Helpers\dsStudents1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsStudents.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LandingPages\Helpers\ImageConverter.cs" />
+    <Compile Include="LandingPages\Helpers\TopHeader\TopHeaderView.xaml.cs">
+      <DependentUpon>TopHeaderView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LandingPages\Helpers\TopPanel\TopPanelView.xaml.cs">
+      <DependentUpon>TopPanelView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LandingPages\Helpers\TopPanel\TopPanelViewModel.cs" />
+    <Compile Include="LandingPages\Helpers\TopPlayer\TopPlayerView.xaml.cs">
+      <DependentUpon>TopPlayerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LandingPages\Helpers\TopPlayer\TopPlayerViewModel.cs" />
+    <Compile Include="LandingPages\Helpers\ViewModelBase.cs" />
+    <Compile Include="LandingPages\Login.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LandingPages\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LandingPages\MainMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LandingPages\MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LandingPages\ManageStudents.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LandingPages\ManageStudents.Designer.cs">
+      <DependentUpon>ManageStudents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LandingPages\Puzzle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LandingPages\Puzzle.Designer.cs">
+      <DependentUpon>Puzzle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LandingPages\PuzzleMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LandingPages\PuzzleMenu.Designer.cs">
+      <DependentUpon>PuzzleMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LandingPages\Register.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LandingPages\Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LandingPages\Top.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LandingPages\Top.Designer.cs">
+      <DependentUpon>Top.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainPage.Designer.cs">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OperationsLandingPages\Add.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OperationsLandingPages\Add.Designer.cs">
+      <DependentUpon>Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OperationsLandingPages\Diff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OperationsLandingPages\Diff.Designer.cs">
+      <DependentUpon>Diff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OperationsLandingPages\Div.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OperationsLandingPages\Div.Designer.cs">
+      <DependentUpon>Div.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OperationsLandingPages\Mul.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OperationsLandingPages\Mul.Designer.cs">
+      <DependentUpon>Mul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\ServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="TestsLandingPages\AddTest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TestsLandingPages\AddTest.Designer.cs">
+      <DependentUpon>AddTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestsLandingPages\DiffTest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TestsLandingPages\DiffTest.Designer.cs">
+      <DependentUpon>DiffTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestsLandingPages\DivTest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TestsLandingPages\DivTest.Designer.cs">
+      <DependentUpon>DivTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestsLandingPages\MulTest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TestsLandingPages\MulTest.Designer.cs">
+      <DependentUpon>MulTest.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="EquationsLandingPages\AddEquation.resx">
+      <DependentUpon>AddEquation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EquationsLandingPages\DiffEquation.resx">
+      <DependentUpon>DiffEquation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EquationsLandingPages\DivEquation.resx">
+      <DependentUpon>DivEquation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EquationsLandingPages\MulEquation.resx">
+      <DependentUpon>MulEquation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LandingPages\Blocks.resx">
+      <DependentUpon>Blocks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LandingPages\HallOfFame.resx">
+      <DependentUpon>HallOfFame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LandingPages\Hangman.resx">
+      <DependentUpon>Hangman.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LandingPages\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LandingPages\MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LandingPages\ManageStudents.resx">
+      <DependentUpon>ManageStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LandingPages\Puzzle.resx">
+      <DependentUpon>Puzzle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LandingPages\PuzzleMenu.resx">
+      <DependentUpon>PuzzleMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LandingPages\Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LandingPages\Top.resx">
+      <DependentUpon>Top.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainPage.resx">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OperationsLandingPages\Add.resx">
+      <DependentUpon>Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OperationsLandingPages\Diff.resx">
+      <DependentUpon>Diff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OperationsLandingPages\Div.resx">
+      <DependentUpon>Div.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OperationsLandingPages\Mul.resx">
+      <DependentUpon>Mul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="TestsLandingPages\AddTest.resx">
+      <DependentUpon>AddTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestsLandingPages\DiffTest.resx">
+      <DependentUpon>DiffTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestsLandingPages\DivTest.resx">
+      <DependentUpon>DivTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestsLandingPages\MulTest.resx">
+      <DependentUpon>MulTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="LandingPages\Helpers\dsStudents.xsc">
+      <DependentUpon>dsStudents.xsd</DependentUpon>
+    </None>
+    <None Include="LandingPages\Helpers\dsStudents.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsStudents1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LandingPages\Helpers\dsStudents.xss">
+      <DependentUpon>dsStudents.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\Hangman\HangmanProject.psd" />
+    <None Include="Service References\ServiceReference\InvatamSaCalculam.Client.ServiceReference.User.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\ServerService.wsdl" />
+    <None Include="Service References\ServiceReference\ServerService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference\ServerService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference\ServerService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference\ServerService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference\ServerService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="LandingPages\Helpers\TopHeader\TopHeaderView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="LandingPages\Helpers\TopPanel\TopPanelView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="LandingPages\Helpers\TopPlayer\TopPlayerView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\01 mic.jpg" />
+    <Content Include="Resources\02 mic.jpg" />
+    <Content Include="Resources\03 mic.jpg" />
+    <Content Include="Resources\04 mic.jpg" />
+    <Content Include="Resources\05 mic.jpg" />
+    <Content Include="Resources\06 mic.jpg" />
+    <Content Include="Resources\07 mic.jpg" />
+    <Content Include="Resources\08 mic.jpg" />
+    <Content Include="Resources\09 mic.jpg" />
+    <Content Include="Resources\10 mic.jpg" />
+    <Content Include="Resources\11 mic.jpg" />
+    <Content Include="Resources\12 mic.jpg" />
+    <Content Include="Resources\13 mic.jpg" />
+    <Content Include="Resources\14 mic.jpg" />
+    <Content Include="Resources\15 mic.jpg" />
+    <Content Include="Resources\16 mic.jpg" />
+    <Content Include="Resources\17 mic.jpg" />
+    <Content Include="Resources\18 mic.jpg" />
+    <Content Include="Resources\19 mic.jpg" />
+    <Content Include="Resources\20 mic.jpg" />
+    <Content Include="Resources\21 mic.jpg" />
+    <Content Include="Resources\22 mic.jpg" />
+    <Content Include="Resources\23 mic.jpg" />
+    <Content Include="Resources\25.png" />
+    <Content Include="Resources\26.png" />
+    <Content Include="Resources\27.png" />
+    <Content Include="Resources\8.png" />
+    <Content Include="Resources\algebra.gif" />
+    <Content Include="Resources\bigPuzzle.png" />
+    <Content Include="Resources\blocks.png" />
+    <None Include="Resources\Capture.PNG" />
+    <Content Include="Resources\cups.png" />
+    <Content Include="Resources\hangman.png" />
+    <Content Include="Resources\Hangman\Hangman1.png" />
+    <Content Include="Resources\Hangman\Hangman2.png" />
+    <Content Include="Resources\Hangman\Hangman3.png" />
+    <Content Include="Resources\Hangman\Hangman4.png" />
+    <Content Include="Resources\Hangman\Hangman5.png" />
+    <Content Include="Resources\Hangman\Hangman6.png" />
+    <Content Include="Resources\Hangman\Hangman7.png" />
+    <Content Include="Resources\IESIRE bun.png" />
+    <Content Include="Resources\Intreg\01.jpg" />
+    <Content Include="Resources\Intreg\02.jpg" />
+    <Content Include="Resources\Intreg\03.jpg" />
+    <Content Include="Resources\Intreg\04.jpg" />
+    <Content Include="Resources\Intreg\05.jpg" />
+    <Content Include="Resources\Intreg\06.jpg" />
+    <Content Include="Resources\Intreg\07.jpg" />
+    <Content Include="Resources\Intreg\08.jpg" />
+    <Content Include="Resources\Intreg\09.jpg" />
+    <Content Include="Resources\Intreg\10.jpg" />
+    <Content Include="Resources\Intreg\11.jpg" />
+    <Content Include="Resources\Intreg\12.jpg" />
+    <Content Include="Resources\Intreg\13.jpg" />
+    <Content Include="Resources\Intreg\14.jpg" />
+    <Content Include="Resources\Intreg\15.jpg" />
+    <Content Include="Resources\Intreg\16.jpg" />
+    <Content Include="Resources\Intreg\17.jpg" />
+    <Content Include="Resources\Intreg\18.jpg" />
+    <Content Include="Resources\Intreg\19.jpg" />
+    <Content Include="Resources\Intreg\20.jpg" />
+    <Content Include="Resources\Intreg\21.jpg" />
+    <Content Include="Resources\Intreg\22.jpg" />
+    <Content Include="Resources\Intreg\23.jpg" />
+    <None Include="Resources\ISC.jpg" />
+    <Content Include="Resources\Mare\02-00-01.png" />
+    <Content Include="Resources\Mare\02-00-02.png" />
+    <Content Include="Resources\Mare\02-00-03.png" />
+    <Content Include="Resources\Mare\02-00-04.png" />
+    <Content Include="Resources\Mare\02-00-05.png" />
+    <Content Include="Resources\Mare\02-00-06.png" />
+    <Content Include="Resources\Mare\02-00-07.png" />
+    <Content Include="Resources\Mare\02-00-08.png" />
+    <Content Include="Resources\Mare\02-00-09.png" />
+    <Content Include="Resources\Mare\02-00-10.png" />
+    <Content Include="Resources\Mare\02-00-11.png" />
+    <Content Include="Resources\Mare\02-00-12.png" />
+    <Content Include="Resources\Mare\02-00-13.png" />
+    <Content Include="Resources\Mare\02-00-14.png" />
+    <Content Include="Resources\Mare\02-00-15.png" />
+    <Content Include="Resources\Mare\02-00-16.png" />
+    <Content Include="Resources\Mare\02-00-17.png" />
+    <Content Include="Resources\Mare\02-00-18.png" />
+    <Content Include="Resources\Mare\02-00-19.png" />
+    <Content Include="Resources\Mare\02-00-20.png" />
+    <Content Include="Resources\Mare\02-00-21.png" />
+    <Content Include="Resources\Mare\02-00-22.png" />
+    <Content Include="Resources\Mare\02-00-23.png" />
+    <Content Include="Resources\Mare\02-01-01.png" />
+    <Content Include="Resources\Mare\02-01-02.png" />
+    <Content Include="Resources\Mare\02-01-03.png" />
+    <Content Include="Resources\Mare\02-01-04.png" />
+    <Content Include="Resources\Mare\02-01-05.png" />
+    <Content Include="Resources\Mare\02-01-06.png" />
+    <Content Include="Resources\Mare\02-01-07.png" />
+    <Content Include="Resources\Mare\02-01-08.png" />
+    <Content Include="Resources\Mare\02-01-09.png" />
+    <Content Include="Resources\Mare\02-01-10.png" />
+    <Content Include="Resources\Mare\02-01-11.png" />
+    <Content Include="Resources\Mare\02-01-12.png" />
+    <Content Include="Resources\Mare\02-01-13.png" />
+    <Content Include="Resources\Mare\02-01-14.png" />
+    <Content Include="Resources\Mare\02-01-15.png" />
+    <Content Include="Resources\Mare\02-01-16.png" />
+    <Content Include="Resources\Mare\02-01-17.png" />
+    <Content Include="Resources\Mare\02-01-18.png" />
+    <Content Include="Resources\Mare\02-01-19.png" />
+    <Content Include="Resources\Mare\02-01-20.png" />
+    <Content Include="Resources\Mare\02-01-21.png" />
+    <Content Include="Resources\Mare\02-01-22.png" />
+    <Content Include="Resources\Mare\02-01-23.png" />
+    <Content Include="Resources\Mare\02-02-01.png" />
+    <Content Include="Resources\Mare\02-02-02.png" />
+    <Content Include="Resources\Mare\02-02-03.png" />
+    <Content Include="Resources\Mare\02-02-04.png" />
+    <Content Include="Resources\Mare\02-02-05.png" />
+    <Content Include="Resources\Mare\02-02-06.png" />
+    <Content Include="Resources\Mare\02-02-07.png" />
+    <Content Include="Resources\Mare\02-02-08.png" />
+    <Content Include="Resources\Mare\02-02-09.png" />
+    <Content Include="Resources\Mare\02-02-10.png" />
+    <Content Include="Resources\Mare\02-02-11.png" />
+    <Content Include="Resources\Mare\02-02-12.png" />
+    <Content Include="Resources\Mare\02-02-13.png" />
+    <Content Include="Resources\Mare\02-02-14.png" />
+    <Content Include="Resources\Mare\02-02-15.png" />
+    <Content Include="Resources\Mare\02-02-16.png" />
+    <Content Include="Resources\Mare\02-02-17.png" />
+    <Content Include="Resources\Mare\02-02-18.png" />
+    <Content Include="Resources\Mare\02-02-19.png" />
+    <Content Include="Resources\Mare\02-02-20.png" />
+    <Content Include="Resources\Mare\02-02-21.png" />
+    <Content Include="Resources\Mare\02-02-22.png" />
+    <Content Include="Resources\Mare\02-02-23.png" />
+    <Content Include="Resources\Mare\02-03-01.png" />
+    <Content Include="Resources\Mare\02-03-02.png" />
+    <Content Include="Resources\Mare\02-03-03.png" />
+    <Content Include="Resources\Mare\02-03-04.png" />
+    <Content Include="Resources\Mare\02-03-05.png" />
+    <Content Include="Resources\Mare\02-03-06.png" />
+    <Content Include="Resources\Mare\02-03-07.png" />
+    <Content Include="Resources\Mare\02-03-08.png" />
+    <Content Include="Resources\Mare\02-03-09.png" />
+    <Content Include="Resources\Mare\02-03-10.png" />
+    <Content Include="Resources\Mare\02-03-11.png" />
+    <Content Include="Resources\Mare\02-03-12.png" />
+    <Content Include="Resources\Mare\02-03-13.png" />
+    <Content Include="Resources\Mare\02-03-14.png" />
+    <Content Include="Resources\Mare\02-03-15.png" />
+    <Content Include="Resources\Mare\02-03-16.png" />
+    <Content Include="Resources\Mare\02-03-17.png" />
+    <Content Include="Resources\Mare\02-03-18.png" />
+    <Content Include="Resources\Mare\02-03-19.png" />
+    <Content Include="Resources\Mare\02-03-20.png" />
+    <Content Include="Resources\Mare\02-03-21.png" />
+    <Content Include="Resources\Mare\02-03-22.png" />
+    <Content Include="Resources\Mare\02-03-23.png" />
+    <Content Include="Resources\Mare\02-04-01.png" />
+    <Content Include="Resources\Mare\02-04-02.png" />
+    <Content Include="Resources\Mare\02-04-03.png" />
+    <Content Include="Resources\Mare\02-04-04.png" />
+    <Content Include="Resources\Mare\02-04-05.png" />
+    <Content Include="Resources\Mare\02-04-06.png" />
+    <Content Include="Resources\Mare\02-04-07.png" />
+    <Content Include="Resources\Mare\02-04-08.png" />
+    <Content Include="Resources\Mare\02-04-09.png" />
+    <Content Include="Resources\Mare\02-04-10.png" />
+    <Content Include="Resources\Mare\02-04-11.png" />
+    <Content Include="Resources\Mare\02-04-12.png" />
+    <Content Include="Resources\Mare\02-04-13.png" />
+    <Content Include="Resources\Mare\02-04-14.png" />
+    <Content Include="Resources\Mare\02-04-15.png" />
+    <Content Include="Resources\Mare\02-04-16.png" />
+    <Content Include="Resources\Mare\02-04-17.png" />
+    <Content Include="Resources\Mare\02-04-18.png" />
+    <Content Include="Resources\Mare\02-04-19.png" />
+    <Content Include="Resources\Mare\02-04-20.png" />
+    <Content Include="Resources\Mare\02-04-21.png" />
+    <Content Include="Resources\Mare\02-04-22.png" />
+    <Content Include="Resources\Mare\02-04-23.png" />
+    <Content Include="Resources\Mare\02-05-01.png" />
+    <Content Include="Resources\Mare\02-05-02.png" />
+    <Content Include="Resources\Mare\02-05-03.png" />
+    <Content Include="Resources\Mare\02-05-04.png" />
+    <Content Include="Resources\Mare\02-05-05.png" />
+    <Content Include="Resources\Mare\02-05-06.png" />
+    <Content Include="Resources\Mare\02-05-07.png" />
+    <Content Include="Resources\Mare\02-05-08.png" />
+    <Content Include="Resources\Mare\02-05-09.png" />
+    <Content Include="Resources\Mare\02-05-10.png" />
+    <Content Include="Resources\Mare\02-05-11.png" />
+    <Content Include="Resources\Mare\02-05-12.png" />
+    <Content Include="Resources\Mare\02-05-13.png" />
+    <Content Include="Resources\Mare\02-05-14.png" />
+    <Content Include="Resources\Mare\02-05-15.png" />
+    <Content Include="Resources\Mare\02-05-16.png" />
+    <Content Include="Resources\Mare\02-05-17.png" />
+    <Content Include="Resources\Mare\02-05-18.png" />
+    <Content Include="Resources\Mare\02-05-19.png" />
+    <Content Include="Resources\Mare\02-05-20.png" />
+    <Content Include="Resources\Mare\02-05-21.png" />
+    <Content Include="Resources\Mare\02-05-22.png" />
+    <Content Include="Resources\Mare\02-05-23.png" />
+    <Content Include="Resources\Mare\02-06-01.png" />
+    <Content Include="Resources\Mare\02-06-02.png" />
+    <Content Include="Resources\Mare\02-06-03.png" />
+    <Content Include="Resources\Mare\02-06-04.png" />
+    <Content Include="Resources\Mare\02-06-05.png" />
+    <Content Include="Resources\Mare\02-06-06.png" />
+    <Content Include="Resources\Mare\02-06-07.png" />
+    <Content Include="Resources\Mare\02-06-08.png" />
+    <Content Include="Resources\Mare\02-06-09.png" />
+    <Content Include="Resources\Mare\02-06-10.png" />
+    <Content Include="Resources\Mare\02-06-11.png" />
+    <Content Include="Resources\Mare\02-06-12.png" />
+    <Content Include="Resources\Mare\02-06-13.png" />
+    <Content Include="Resources\Mare\02-06-14.png" />
+    <Content Include="Resources\Mare\02-06-15.png" />
+    <Content Include="Resources\Mare\02-06-16.png" />
+    <Content Include="Resources\Mare\02-06-17.png" />
+    <Content Include="Resources\Mare\02-06-18.png" />
+    <Content Include="Resources\Mare\02-06-19.png" />
+    <Content Include="Resources\Mare\02-06-20.png" />
+    <Content Include="Resources\Mare\02-06-21.png" />
+    <Content Include="Resources\Mare\02-06-22.png" />
+    <Content Include="Resources\Mare\02-06-23.png" />
+    <Content Include="Resources\Mare\02-07-01.png" />
+    <Content Include="Resources\Mare\02-07-02.png" />
+    <Content Include="Resources\Mare\02-07-03.png" />
+    <Content Include="Resources\Mare\02-07-04.png" />
+    <Content Include="Resources\Mare\02-07-05.png" />
+    <Content Include="Resources\Mare\02-07-06.png" />
+    <Content Include="Resources\Mare\02-07-07.png" />
+    <Content Include="Resources\Mare\02-07-08.png" />
+    <Content Include="Resources\Mare\02-07-09.png" />
+    <Content Include="Resources\Mare\02-07-10.png" />
+    <Content Include="Resources\Mare\02-07-11.png" />
+    <Content Include="Resources\Mare\02-07-12.png" />
+    <Content Include="Resources\Mare\02-07-13.png" />
+    <Content Include="Resources\Mare\02-07-14.png" />
+    <Content Include="Resources\Mare\02-07-15.png" />
+    <Content Include="Resources\Mare\02-07-16.png" />
+    <Content Include="Resources\Mare\02-07-17.png" />
+    <Content Include="Resources\Mare\02-07-18.png" />
+    <Content Include="Resources\Mare\02-07-19.png" />
+    <Content Include="Resources\Mare\02-07-20.png" />
+    <Content Include="Resources\Mare\02-07-21.png" />
+    <Content Include="Resources\Mare\02-07-22.png" />
+    <Content Include="Resources\Mare\02-07-23.png" />
+    <Content Include="Resources\Mare\02-08-01.png" />
+    <Content Include="Resources\Mare\02-08-02.png" />
+    <Content Include="Resources\Mare\02-08-03.png" />
+    <Content Include="Resources\Mare\02-08-04.png" />
+    <Content Include="Resources\Mare\02-08-05.png" />
+    <Content Include="Resources\Mare\02-08-06.png" />
+    <Content Include="Resources\Mare\02-08-07.png" />
+    <Content Include="Resources\Mare\02-08-08.png" />
+    <Content Include="Resources\Mare\02-08-09.png" />
+    <Content Include="Resources\Mare\02-08-10.png" />
+    <Content Include="Resources\Mare\02-08-11.png" />
+    <Content Include="Resources\Mare\02-08-12.png" />
+    <Content Include="Resources\Mare\02-08-13.png" />
+    <Content Include="Resources\Mare\02-08-14.png" />
+    <Content Include="Resources\Mare\02-08-15.png" />
+    <Content Include="Resources\Mare\02-08-16.png" />
+    <Content Include="Resources\Mare\02-08-17.png" />
+    <Content Include="Resources\Mare\02-08-18.png" />
+    <Content Include="Resources\Mare\02-08-19.png" />
+    <Content Include="Resources\Mare\02-08-20.png" />
+    <Content Include="Resources\Mare\02-08-21.png" />
+    <Content Include="Resources\Mare\02-08-22.png" />
+    <Content Include="Resources\Mare\02-08-23.png" />
+    <Content Include="Resources\Mare\02-09-01.png" />
+    <Content Include="Resources\Mare\02-09-02.png" />
+    <Content Include="Resources\Mare\02-09-03.png" />
+    <Content Include="Resources\Mare\02-09-04.png" />
+    <Content Include="Resources\Mare\02-09-05.png" />
+    <Content Include="Resources\Mare\02-09-06.png" />
+    <Content Include="Resources\Mare\02-09-07.png" />
+    <Content Include="Resources\Mare\02-09-08.png" />
+    <Content Include="Resources\Mare\02-09-09.png" />
+    <Content Include="Resources\Mare\02-09-10.png" />
+    <Content Include="Resources\Mare\02-09-11.png" />
+    <Content Include="Resources\Mare\02-09-12.png" />
+    <Content Include="Resources\Mare\02-09-13.png" />
+    <Content Include="Resources\Mare\02-09-14.png" />
+    <Content Include="Resources\Mare\02-09-15.png" />
+    <Content Include="Resources\Mare\02-09-16.png" />
+    <Content Include="Resources\Mare\02-09-17.png" />
+    <Content Include="Resources\Mare\02-09-18.png" />
+    <Content Include="Resources\Mare\02-09-19.png" />
+    <Content Include="Resources\Mare\02-09-20.png" />
+    <Content Include="Resources\Mare\02-09-21.png" />
+    <Content Include="Resources\Mare\02-09-22.png" />
+    <Content Include="Resources\Mare\02-09-23.png" />
+    <Content Include="Resources\Mare\02-10-01.png" />
+    <Content Include="Resources\Mare\02-10-02.png" />
+    <Content Include="Resources\Mare\02-10-03.png" />
+    <Content Include="Resources\Mare\02-10-04.png" />
+    <Content Include="Resources\Mare\02-10-05.png" />
+    <Content Include="Resources\Mare\02-10-06.png" />
+    <Content Include="Resources\Mare\02-10-07.png" />
+    <Content Include="Resources\Mare\02-10-08.png" />
+    <Content Include="Resources\Mare\02-10-09.png" />
+    <Content Include="Resources\Mare\02-10-10.png" />
+    <Content Include="Resources\Mare\02-10-11.png" />
+    <Content Include="Resources\Mare\02-10-12.png" />
+    <Content Include="Resources\Mare\02-10-13.png" />
+    <Content Include="Resources\Mare\02-10-14.png" />
+    <Content Include="Resources\Mare\02-10-15.png" />
+    <Content Include="Resources\Mare\02-10-16.png" />
+    <Content Include="Resources\Mare\02-10-17.png" />
+    <Content Include="Resources\Mare\02-10-18.png" />
+    <Content Include="Resources\Mare\02-10-19.png" />
+    <Content Include="Resources\Mare\02-10-20.png" />
+    <Content Include="Resources\Mare\02-10-21.png" />
+    <Content Include="Resources\Mare\02-10-22.png" />
+    <Content Include="Resources\Mare\02-10-23.png" />
+    <Content Include="Resources\Mare\02-11-01.png" />
+    <Content Include="Resources\Mare\02-11-02.png" />
+    <Content Include="Resources\Mare\02-11-03.png" />
+    <Content Include="Resources\Mare\02-11-04.png" />
+    <Content Include="Resources\Mare\02-11-05.png" />
+    <Content Include="Resources\Mare\02-11-06.png" />
+    <Content Include="Resources\Mare\02-11-07.png" />
+    <Content Include="Resources\Mare\02-11-08.png" />
+    <Content Include="Resources\Mare\02-11-09.png" />
+    <Content Include="Resources\Mare\02-11-10.png" />
+    <Content Include="Resources\Mare\02-11-11.png" />
+    <Content Include="Resources\Mare\02-11-12.png" />
+    <Content Include="Resources\Mare\02-11-13.png" />
+    <Content Include="Resources\Mare\02-11-14.png" />
+    <Content Include="Resources\Mare\02-11-15.png" />
+    <Content Include="Resources\Mare\02-11-16.png" />
+    <Content Include="Resources\Mare\02-11-17.png" />
+    <Content Include="Resources\Mare\02-11-18.png" />
+    <Content Include="Resources\Mare\02-11-19.png" />
+    <Content Include="Resources\Mare\02-11-20.png" />
+    <Content Include="Resources\Mare\02-11-21.png" />
+    <Content Include="Resources\Mare\02-11-22.png" />
+    <Content Include="Resources\Mare\02-11-23.png" />
+    <Content Include="Resources\Mare\02-12-01.png" />
+    <Content Include="Resources\Mare\02-12-02.png" />
+    <Content Include="Resources\Mare\02-12-03.png" />
+    <Content Include="Resources\Mare\02-12-04.png" />
+    <Content Include="Resources\Mare\02-12-05.png" />
+    <Content Include="Resources\Mare\02-12-06.png" />
+    <Content Include="Resources\Mare\02-12-07.png" />
+    <Content Include="Resources\Mare\02-12-08.png" />
+    <Content Include="Resources\Mare\02-12-09.png" />
+    <Content Include="Resources\Mare\02-12-10.png" />
+    <Content Include="Resources\Mare\02-12-11.png" />
+    <Content Include="Resources\Mare\02-12-12.png" />
+    <Content Include="Resources\Mare\02-12-13.png" />
+    <Content Include="Resources\Mare\02-12-14.png" />
+    <Content Include="Resources\Mare\02-12-15.png" />
+    <Content Include="Resources\Mare\02-12-16.png" />
+    <Content Include="Resources\Mare\02-12-17.png" />
+    <Content Include="Resources\Mare\02-12-18.png" />
+    <Content Include="Resources\Mare\02-12-19.png" />
+    <Content Include="Resources\Mare\02-12-20.png" />
+    <Content Include="Resources\Mare\02-12-21.png" />
+    <Content Include="Resources\Mare\02-12-22.png" />
+    <Content Include="Resources\Mare\02-12-23.png" />
+    <Content Include="Resources\Mare\02-13-01.png" />
+    <Content Include="Resources\Mare\02-13-02.png" />
+    <Content Include="Resources\Mare\02-13-03.png" />
+    <Content Include="Resources\Mare\02-13-04.png" />
+    <Content Include="Resources\Mare\02-13-05.png" />
+    <Content Include="Resources\Mare\02-13-06.png" />
+    <Content Include="Resources\Mare\02-13-07.png" />
+    <Content Include="Resources\Mare\02-13-08.png" />
+    <Content Include="Resources\Mare\02-13-09.png" />
+    <Content Include="Resources\Mare\02-13-10.png" />
+    <Content Include="Resources\Mare\02-13-11.png" />
+    <Content Include="Resources\Mare\02-13-12.png" />
+    <Content Include="Resources\Mare\02-13-13.png" />
+    <Content Include="Resources\Mare\02-13-14.png" />
+    <Content Include="Resources\Mare\02-13-15.png" />
+    <Content Include="Resources\Mare\02-13-16.png" />
+    <Content Include="Resources\Mare\02-13-17.png" />
+    <Content Include="Resources\Mare\02-13-18.png" />
+    <Content Include="Resources\Mare\02-13-19.png" />
+    <Content Include="Resources\Mare\02-13-20.png" />
+    <Content Include="Resources\Mare\02-13-21.png" />
+    <Content Include="Resources\Mare\02-13-22.png" />
+    <Content Include="Resources\Mare\02-13-23.png" />
+    <Content Include="Resources\Mare\02-14-01.png" />
+    <Content Include="Resources\Mare\02-14-02.png" />
+    <Content Include="Resources\Mare\02-14-03.png" />
+    <Content Include="Resources\Mare\02-14-04.png" />
+    <Content Include="Resources\Mare\02-14-05.png" />
+    <Content Include="Resources\Mare\02-14-06.png" />
+    <Content Include="Resources\Mare\02-14-07.png" />
+    <Content Include="Resources\Mare\02-14-08.png" />
+    <Content Include="Resources\Mare\02-14-09.png" />
+    <Content Include="Resources\Mare\02-14-10.png" />
+    <Content Include="Resources\Mare\02-14-11.png" />
+    <Content Include="Resources\Mare\02-14-12.png" />
+    <Content Include="Resources\Mare\02-14-13.png" />
+    <Content Include="Resources\Mare\02-14-14.png" />
+    <Content Include="Resources\Mare\02-14-15.png" />
+    <Content Include="Resources\Mare\02-14-16.png" />
+    <Content Include="Resources\Mare\02-14-17.png" />
+    <Content Include="Resources\Mare\02-14-18.png" />
+    <Content Include="Resources\Mare\02-14-19.png" />
+    <Content Include="Resources\Mare\02-14-20.png" />
+    <Content Include="Resources\Mare\02-14-21.png" />
+    <Content Include="Resources\Mare\02-14-22.png" />
+    <Content Include="Resources\Mare\02-14-23.png" />
+    <Content Include="Resources\Mare\02-15-01.png" />
+    <Content Include="Resources\Mare\02-15-02.png" />
+    <Content Include="Resources\Mare\02-15-03.png" />
+    <Content Include="Resources\Mare\02-15-04.png" />
+    <Content Include="Resources\Mare\02-15-05.png" />
+    <Content Include="Resources\Mare\02-15-06.png" />
+    <Content Include="Resources\Mare\02-15-07.png" />
+    <Content Include="Resources\Mare\02-15-08.png" />
+    <Content Include="Resources\Mare\02-15-09.png" />
+    <Content Include="Resources\Mare\02-15-10.png" />
+    <Content Include="Resources\Mare\02-15-11.png" />
+    <Content Include="Resources\Mare\02-15-12.png" />
+    <Content Include="Resources\Mare\02-15-13.png" />
+    <Content Include="Resources\Mare\02-15-14.png" />
+    <Content Include="Resources\Mare\02-15-15.png" />
+    <Content Include="Resources\Mare\02-15-16.png" />
+    <Content Include="Resources\Mare\02-15-17.png" />
+    <Content Include="Resources\Mare\02-15-18.png" />
+    <Content Include="Resources\Mare\02-15-19.png" />
+    <Content Include="Resources\Mare\02-15-20.png" />
+    <Content Include="Resources\Mare\02-15-21.png" />
+    <Content Include="Resources\Mare\02-15-22.png" />
+    <Content Include="Resources\Mare\02-15-23.png" />
+    <Content Include="Resources\Mare\02-16-01.png" />
+    <Content Include="Resources\Mare\02-16-02.png" />
+    <Content Include="Resources\Mare\02-16-03.png" />
+    <Content Include="Resources\Mare\02-16-04.png" />
+    <Content Include="Resources\Mare\02-16-05.png" />
+    <Content Include="Resources\Mare\02-16-06.png" />
+    <Content Include="Resources\Mare\02-16-07.png" />
+    <Content Include="Resources\Mare\02-16-08.png" />
+    <Content Include="Resources\Mare\02-16-09.png" />
+    <Content Include="Resources\Mare\02-16-10.png" />
+    <Content Include="Resources\Mare\02-16-11.png" />
+    <Content Include="Resources\Mare\02-16-12.png" />
+    <Content Include="Resources\Mare\02-16-13.png" />
+    <Content Include="Resources\Mare\02-16-14.png" />
+    <Content Include="Resources\Mare\02-16-15.png" />
+    <Content Include="Resources\Mare\02-16-16.png" />
+    <Content Include="Resources\Mare\02-16-17.png" />
+    <Content Include="Resources\Mare\02-16-18.png" />
+    <Content Include="Resources\Mare\02-16-19.png" />
+    <Content Include="Resources\Mare\02-16-20.png" />
+    <Content Include="Resources\Mare\02-16-21.png" />
+    <Content Include="Resources\Mare\02-16-22.png" />
+    <Content Include="Resources\Mare\02-16-23.png" />
+    <Content Include="Resources\Mare\02-17-01.png" />
+    <Content Include="Resources\Mare\02-17-02.png" />
+    <Content Include="Resources\Mare\02-17-03.png" />
+    <Content Include="Resources\Mare\02-17-04.png" />
+    <Content Include="Resources\Mare\02-17-05.png" />
+    <Content Include="Resources\Mare\02-17-06.png" />
+    <Content Include="Resources\Mare\02-17-07.png" />
+    <Content Include="Resources\Mare\02-17-08.png" />
+    <Content Include="Resources\Mare\02-17-09.png" />
+    <Content Include="Resources\Mare\02-17-10.png" />
+    <Content Include="Resources\Mare\02-17-11.png" />
+    <Content Include="Resources\Mare\02-17-12.png" />
+    <Content Include="Resources\Mare\02-17-13.png" />
+    <Content Include="Resources\Mare\02-17-14.png" />
+    <Content Include="Resources\Mare\02-17-15.png" />
+    <Content Include="Resources\Mare\02-17-16.png" />
+    <Content Include="Resources\Mare\02-17-17.png" />
+    <Content Include="Resources\Mare\02-17-18.png" />
+    <Content Include="Resources\Mare\02-17-19.png" />
+    <Content Include="Resources\Mare\02-17-20.png" />
+    <Content Include="Resources\Mare\02-17-21.png" />
+    <Content Include="Resources\Mare\02-17-22.png" />
+    <Content Include="Resources\Mare\02-17-23.png" />
+    <Content Include="Resources\Mare\02-18-01.png" />
+    <Content Include="Resources\Mare\02-18-02.png" />
+    <Content Include="Resources\Mare\02-18-03.png" />
+    <Content Include="Resources\Mare\02-18-04.png" />
+    <Content Include="Resources\Mare\02-18-05.png" />
+    <Content Include="Resources\Mare\02-18-06.png" />
+    <Content Include="Resources\Mare\02-18-07.png" />
+    <Content Include="Resources\Mare\02-18-08.png" />
+    <Content Include="Resources\Mare\02-18-09.png" />
+    <Content Include="Resources\Mare\02-18-10.png" />
+    <Content Include="Resources\Mare\02-18-11.png" />
+    <Content Include="Resources\Mare\02-18-12.png" />
+    <Content Include="Resources\Mare\02-18-13.png" />
+    <Content Include="Resources\Mare\02-18-14.png" />
+    <Content Include="Resources\Mare\02-18-15.png" />
+    <Content Include="Resources\Mare\02-18-16.png" />
+    <Content Include="Resources\Mare\02-18-17.png" />
+    <Content Include="Resources\Mare\02-18-18.png" />
+    <Content Include="Resources\Mare\02-18-19.png" />
+    <Content Include="Resources\Mare\02-18-20.png" />
+    <Content Include="Resources\Mare\02-18-21.png" />
+    <Content Include="Resources\Mare\02-18-22.png" />
+    <Content Include="Resources\Mare\02-18-23.png" />
+    <Content Include="Resources\Mare\02-19-01.png" />
+    <Content Include="Resources\Mare\02-19-02.png" />
+    <Content Include="Resources\Mare\02-19-03.png" />
+    <Content Include="Resources\Mare\02-19-04.png" />
+    <Content Include="Resources\Mare\02-19-05.png" />
+    <Content Include="Resources\Mare\02-19-06.png" />
+    <Content Include="Resources\Mare\02-19-07.png" />
+    <Content Include="Resources\Mare\02-19-08.png" />
+    <Content Include="Resources\Mare\02-19-09.png" />
+    <Content Include="Resources\Mare\02-19-10.png" />
+    <Content Include="Resources\Mare\02-19-11.png" />
+    <Content Include="Resources\Mare\02-19-12.png" />
+    <Content Include="Resources\Mare\02-19-13.png" />
+    <Content Include="Resources\Mare\02-19-14.png" />
+    <Content Include="Resources\Mare\02-19-15.png" />
+    <Content Include="Resources\Mare\02-19-16.png" />
+    <Content Include="Resources\Mare\02-19-17.png" />
+    <Content Include="Resources\Mare\02-19-18.png" />
+    <Content Include="Resources\Mare\02-19-19.png" />
+    <Content Include="Resources\Mare\02-19-20.png" />
+    <Content Include="Resources\Mare\02-19-21.png" />
+    <Content Include="Resources\Mare\02-19-22.png" />
+    <Content Include="Resources\Mare\02-19-23.png" />
+    <Content Include="Resources\Mare\02-20-01.png" />
+    <Content Include="Resources\Mare\02-20-02.png" />
+    <Content Include="Resources\Mare\02-20-03.png" />
+    <Content Include="Resources\Mare\02-20-04.png" />
+    <Content Include="Resources\Mare\02-20-05.png" />
+    <Content Include="Resources\Mare\02-20-06.png" />
+    <Content Include="Resources\Mare\02-20-07.png" />
+    <Content Include="Resources\Mare\02-20-08.png" />
+    <Content Include="Resources\Mare\02-20-09.png" />
+    <Content Include="Resources\Mare\02-20-10.png" />
+    <Content Include="Resources\Mare\02-20-11.png" />
+    <Content Include="Resources\Mare\02-20-12.png" />
+    <Content Include="Resources\Mare\02-20-13.png" />
+    <Content Include="Resources\Mare\02-20-14.png" />
+    <Content Include="Resources\Mare\02-20-15.png" />
+    <Content Include="Resources\Mare\02-20-16.png" />
+    <Content Include="Resources\Mare\02-20-17.png" />
+    <Content Include="Resources\Mare\02-20-18.png" />
+    <Content Include="Resources\Mare\02-20-19.png" />
+    <Content Include="Resources\Mare\02-20-20.png" />
+    <Content Include="Resources\Mare\02-20-21.png" />
+    <Content Include="Resources\Mare\02-20-22.png" />
+    <Content Include="Resources\Mare\02-20-23.png" />
+    <Content Include="Resources\Mare\02-21-01.png" />
+    <Content Include="Resources\Mare\02-21-02.png" />
+    <Content Include="Resources\Mare\02-21-03.png" />
+    <Content Include="Resources\Mare\02-21-04.png" />
+    <Content Include="Resources\Mare\02-21-05.png" />
+    <Content Include="Resources\Mare\02-21-06.png" />
+    <Content Include="Resources\Mare\02-21-07.png" />
+    <Content Include="Resources\Mare\02-21-08.png" />
+    <Content Include="Resources\Mare\02-21-09.png" />
+    <Content Include="Resources\Mare\02-21-10.png" />
+    <Content Include="Resources\Mare\02-21-11.png" />
+    <Content Include="Resources\Mare\02-21-12.png" />
+    <Content Include="Resources\Mare\02-21-13.png" />
+    <Content Include="Resources\Mare\02-21-14.png" />
+    <Content Include="Resources\Mare\02-21-15.png" />
+    <Content Include="Resources\Mare\02-21-16.png" />
+    <Content Include="Resources\Mare\02-21-17.png" />
+    <Content Include="Resources\Mare\02-21-18.png" />
+    <Content Include="Resources\Mare\02-21-19.png" />
+    <Content Include="Resources\Mare\02-21-20.png" />
+    <Content Include="Resources\Mare\02-21-21.png" />
+    <Content Include="Resources\Mare\02-21-22.png" />
+    <Content Include="Resources\Mare\02-21-23.png" />
+    <Content Include="Resources\Mare\02-22-01.png" />
+    <Content Include="Resources\Mare\02-22-02.png" />
+    <Content Include="Resources\Mare\02-22-03.png" />
+    <Content Include="Resources\Mare\02-22-04.png" />
+    <Content Include="Resources\Mare\02-22-05.png" />
+    <Content Include="Resources\Mare\02-22-06.png" />
+    <Content Include="Resources\Mare\02-22-07.png" />
+    <Content Include="Resources\Mare\02-22-08.png" />
+    <Content Include="Resources\Mare\02-22-09.png" />
+    <Content Include="Resources\Mare\02-22-10.png" />
+    <Content Include="Resources\Mare\02-22-11.png" />
+    <Content Include="Resources\Mare\02-22-12.png" />
+    <Content Include="Resources\Mare\02-22-13.png" />
+    <Content Include="Resources\Mare\02-22-14.png" />
+    <Content Include="Resources\Mare\02-22-15.png" />
+    <Content Include="Resources\Mare\02-22-16.png" />
+    <Content Include="Resources\Mare\02-22-17.png" />
+    <Content Include="Resources\Mare\02-22-18.png" />
+    <Content Include="Resources\Mare\02-22-19.png" />
+    <Content Include="Resources\Mare\02-22-20.png" />
+    <Content Include="Resources\Mare\02-22-21.png" />
+    <Content Include="Resources\Mare\02-22-22.png" />
+    <Content Include="Resources\Mare\02-22-23.png" />
+    <Content Include="Resources\Mare\02-23-01.png" />
+    <Content Include="Resources\Mare\02-23-02.png" />
+    <Content Include="Resources\Mare\02-23-03.png" />
+    <Content Include="Resources\Mare\02-23-04.png" />
+    <Content Include="Resources\Mare\02-23-05.png" />
+    <Content Include="Resources\Mare\02-23-06.png" />
+    <Content Include="Resources\Mare\02-23-07.png" />
+    <Content Include="Resources\Mare\02-23-08.png" />
+    <Content Include="Resources\Mare\02-23-09.png" />
+    <Content Include="Resources\Mare\02-23-10.png" />
+    <Content Include="Resources\Mare\02-23-11.png" />
+    <Content Include="Resources\Mare\02-23-12.png" />
+    <Content Include="Resources\Mare\02-23-13.png" />
+    <Content Include="Resources\Mare\02-23-14.png" />
+    <Content Include="Resources\Mare\02-23-15.png" />
+    <Content Include="Resources\Mare\02-23-16.png" />
+    <Content Include="Resources\Mare\02-23-17.png" />
+    <Content Include="Resources\Mare\02-23-18.png" />
+    <Content Include="Resources\Mare\02-23-19.png" />
+    <Content Include="Resources\Mare\02-23-20.png" />
+    <Content Include="Resources\Mare\02-23-21.png" />
+    <Content Include="Resources\Mare\02-23-22.png" />
+    <Content Include="Resources\Mare\02-23-23.png" />
+    <Content Include="Resources\Mare\02-24-01.png" />
+    <Content Include="Resources\Mare\02-24-02.png" />
+    <Content Include="Resources\Mare\02-24-03.png" />
+    <Content Include="Resources\Mare\02-24-04.png" />
+    <Content Include="Resources\Mare\02-24-05.png" />
+    <Content Include="Resources\Mare\02-24-06.png" />
+    <Content Include="Resources\Mare\02-24-07.png" />
+    <Content Include="Resources\Mare\02-24-08.png" />
+    <Content Include="Resources\Mare\02-24-09.png" />
+    <Content Include="Resources\Mare\02-24-10.png" />
+    <Content Include="Resources\Mare\02-24-11.png" />
+    <Content Include="Resources\Mare\02-24-12.png" />
+    <Content Include="Resources\Mare\02-24-13.png" />
+    <Content Include="Resources\Mare\02-24-14.png" />
+    <Content Include="Resources\Mare\02-24-15.png" />
+    <Content Include="Resources\Mare\02-24-16.png" />
+    <Content Include="Resources\Mare\02-24-17.png" />
+    <Content Include="Resources\Mare\02-24-18.png" />
+    <Content Include="Resources\Mare\02-24-19.png" />
+    <Content Include="Resources\Mare\02-24-20.png" />
+    <Content Include="Resources\Mare\02-24-21.png" />
+    <Content Include="Resources\Mare\02-24-22.png" />
+    <Content Include="Resources\Mare\02-24-23.png" />
+    <Content Include="Resources\math02.gif" />
+    <Content Include="Resources\math_magic_squares.gif" />
+    <Content Include="Resources\math_magic_squares1.gif" />
+    <Content Include="Resources\math_pre_algebra.gif" />
+    <Content Include="Resources\math_properties.gif" />
+    <Content Include="Resources\Mic\01-00-01.png" />
+    <Content Include="Resources\Mic\01-00-02.png" />
+    <Content Include="Resources\Mic\01-00-03.png" />
+    <Content Include="Resources\Mic\01-00-04.png" />
+    <Content Include="Resources\Mic\01-00-05.png" />
+    <Content Include="Resources\Mic\01-00-06.png" />
+    <Content Include="Resources\Mic\01-00-07.png" />
+    <Content Include="Resources\Mic\01-00-08.png" />
+    <Content Include="Resources\Mic\01-00-09.png" />
+    <Content Include="Resources\Mic\01-00-10.png" />
+    <Content Include="Resources\Mic\01-00-11.png" />
+    <Content Include="Resources\Mic\01-00-12.png" />
+    <Content Include="Resources\Mic\01-00-13.png" />
+    <Content Include="Resources\Mic\01-00-14.png" />
+    <Content Include="Resources\Mic\01-00-15.png" />
+    <Content Include="Resources\Mic\01-00-16.png" />
+    <Content Include="Resources\Mic\01-00-17.png" />
+    <Content Include="Resources\Mic\01-00-18.png" />
+    <Content Include="Resources\Mic\01-00-19.png" />
+    <Content Include="Resources\Mic\01-00-20.png" />
+    <Content Include="Resources\Mic\01-00-21.png" />
+    <Content Include="Resources\Mic\01-00-22.png" />
+    <Content Include="Resources\Mic\01-00-23.png" />
+    <Content Include="Resources\Mic\01-01-01.png" />
+    <Content Include="Resources\Mic\01-01-02.png" />
+    <Content Include="Resources\Mic\01-01-03.png" />
+    <Content Include="Resources\Mic\01-01-04.png" />
+    <Content Include="Resources\Mic\01-01-05.png" />
+    <Content Include="Resources\Mic\01-01-06.png" />
+    <Content Include="Resources\Mic\01-01-07.png" />
+    <Content Include="Resources\Mic\01-01-08.png" />
+    <Content Include="Resources\Mic\01-01-09.png" />
+    <Content Include="Resources\Mic\01-01-10.png" />
+    <Content Include="Resources\Mic\01-01-11.png" />
+    <Content Include="Resources\Mic\01-01-12.png" />
+    <Content Include="Resources\Mic\01-01-13.png" />
+    <Content Include="Resources\Mic\01-01-14.png" />
+    <Content Include="Resources\Mic\01-01-15.png" />
+    <Content Include="Resources\Mic\01-01-16.png" />
+    <Content Include="Resources\Mic\01-01-17.png" />
+    <Content Include="Resources\Mic\01-01-18.png" />
+    <Content Include="Resources\Mic\01-01-19.png" />
+    <Content Include="Resources\Mic\01-01-20.png" />
+    <Content Include="Resources\Mic\01-01-21.png" />
+    <Content Include="Resources\Mic\01-01-22.png" />
+    <Content Include="Resources\Mic\01-01-23.png" />
+    <Content Include="Resources\Mic\01-02-01.png" />
+    <Content Include="Resources\Mic\01-02-02.png" />
+    <Content Include="Resources\Mic\01-02-03.png" />
+    <Content Include="Resources\Mic\01-02-04.png" />
+    <Content Include="Resources\Mic\01-02-05.png" />
+    <Content Include="Resources\Mic\01-02-06.png" />
+    <Content Include="Resources\Mic\01-02-07.png" />
+    <Content Include="Resources\Mic\01-02-08.png" />
+    <Content Include="Resources\Mic\01-02-09.png" />
+    <Content Include="Resources\Mic\01-02-10.png" />
+    <Content Include="Resources\Mic\01-02-11.png" />
+    <Content Include="Resources\Mic\01-02-12.png" />
+    <Content Include="Resources\Mic\01-02-13.png" />
+    <Content Include="Resources\Mic\01-02-14.png" />
+    <Content Include="Resources\Mic\01-02-15.png" />
+    <Content Include="Resources\Mic\01-02-16.png" />
+    <Content Include="Resources\Mic\01-02-17.png" />
+    <Content Include="Resources\Mic\01-02-18.png" />
+    <Content Include="Resources\Mic\01-02-19.png" />
+    <Content Include="Resources\Mic\01-02-20.png" />
+    <Content Include="Resources\Mic\01-02-21.png" />
+    <Content Include="Resources\Mic\01-02-22.png" />
+    <Content Include="Resources\Mic\01-02-23.png" />
+    <Content Include="Resources\Mic\01-03-01.png" />
+    <Content Include="Resources\Mic\01-03-02.png" />
+    <Content Include="Resources\Mic\01-03-03.png" />
+    <Content Include="Resources\Mic\01-03-04.png" />
+    <Content Include="Resources\Mic\01-03-05.png" />
+    <Content Include="Resources\Mic\01-03-06.png" />
+    <Content Include="Resources\Mic\01-03-07.png" />
+    <Content Include="Resources\Mic\01-03-08.png" />
+    <Content Include="Resources\Mic\01-03-09.png" />
+    <Content Include="Resources\Mic\01-03-10.png" />
+    <Content Include="Resources\Mic\01-03-11.png" />
+    <Content Include="Resources\Mic\01-03-12.png" />
+    <Content Include="Resources\Mic\01-03-13.png" />
+    <Content Include="Resources\Mic\01-03-14.png" />
+    <Content Include="Resources\Mic\01-03-15.png" />
+    <Content Include="Resources\Mic\01-03-16.png" />
+    <Content Include="Resources\Mic\01-03-17.png" />
+    <Content Include="Resources\Mic\01-03-18.png" />
+    <Content Include="Resources\Mic\01-03-19.png" />
+    <Content Include="Resources\Mic\01-03-20.png" />
+    <Content Include="Resources\Mic\01-03-21.png" />
+    <Content Include="Resources\Mic\01-03-22.png" />
+    <Content Include="Resources\Mic\01-03-23.png" />
+    <Content Include="Resources\Mic\01-04-01.png" />
+    <Content Include="Resources\Mic\01-04-02.png" />
+    <Content Include="Resources\Mic\01-04-03.png" />
+    <Content Include="Resources\Mic\01-04-04.png" />
+    <Content Include="Resources\Mic\01-04-05.png" />
+    <Content Include="Resources\Mic\01-04-06.png" />
+    <Content Include="Resources\Mic\01-04-07.png" />
+    <Content Include="Resources\Mic\01-04-08.png" />
+    <Content Include="Resources\Mic\01-04-09.png" />
+    <Content Include="Resources\Mic\01-04-10.png" />
+    <Content Include="Resources\Mic\01-04-11.png" />
+    <Content Include="Resources\Mic\01-04-12.png" />
+    <Content Include="Resources\Mic\01-04-13.png" />
+    <Content Include="Resources\Mic\01-04-14.png" />
+    <Content Include="Resources\Mic\01-04-15.png" />
+    <Content Include="Resources\Mic\01-04-16.png" />
+    <Content Include="Resources\Mic\01-04-17.png" />
+    <Content Include="Resources\Mic\01-04-18.png" />
+    <Content Include="Resources\Mic\01-04-19.png" />
+    <Content Include="Resources\Mic\01-04-20.png" />
+    <Content Include="Resources\Mic\01-04-21.png" />
+    <Content Include="Resources\Mic\01-04-22.png" />
+    <Content Include="Resources\Mic\01-04-23.png" />
+    <Content Include="Resources\Mic\01-05-01.png" />
+    <Content Include="Resources\Mic\01-05-02.png" />
+    <Content Include="Resources\Mic\01-05-03.png" />
+    <Content Include="Resources\Mic\01-05-04.png" />
+    <Content Include="Resources\Mic\01-05-05.png" />
+    <Content Include="Resources\Mic\01-05-06.png" />
+    <Content Include="Resources\Mic\01-05-07.png" />
+    <Content Include="Resources\Mic\01-05-08.png" />
+    <Content Include="Resources\Mic\01-05-09.png" />
+    <Content Include="Resources\Mic\01-05-10.png" />
+    <Content Include="Resources\Mic\01-05-11.png" />
+    <Content Include="Resources\Mic\01-05-12.png" />
+    <Content Include="Resources\Mic\01-05-13.png" />
+    <Content Include="Resources\Mic\01-05-14.png" />
+    <Content Include="Resources\Mic\01-05-15.png" />
+    <Content Include="Resources\Mic\01-05-16.png" />
+    <Content Include="Resources\Mic\01-05-17.png" />
+    <Content Include="Resources\Mic\01-05-18.png" />
+    <Content Include="Resources\Mic\01-05-19.png" />
+    <Content Include="Resources\Mic\01-05-20.png" />
+    <Content Include="Resources\Mic\01-05-21.png" />
+    <Content Include="Resources\Mic\01-05-22.png" />
+    <Content Include="Resources\Mic\01-05-23.png" />
+    <Content Include="Resources\Mic\01-06-01.png" />
+    <Content Include="Resources\Mic\01-06-02.png" />
+    <Content Include="Resources\Mic\01-06-03.png" />
+    <Content Include="Resources\Mic\01-06-04.png" />
+    <Content Include="Resources\Mic\01-06-05.png" />
+    <Content Include="Resources\Mic\01-06-06.png" />
+    <Content Include="Resources\Mic\01-06-07.png" />
+    <Content Include="Resources\Mic\01-06-08.png" />
+    <Content Include="Resources\Mic\01-06-09.png" />
+    <Content Include="Resources\Mic\01-06-10.png" />
+    <Content Include="Resources\Mic\01-06-11.png" />
+    <Content Include="Resources\Mic\01-06-12.png" />
+    <Content Include="Resources\Mic\01-06-13.png" />
+    <Content Include="Resources\Mic\01-06-14.png" />
+    <Content Include="Resources\Mic\01-06-15.png" />
+    <Content Include="Resources\Mic\01-06-16.png" />
+    <Content Include="Resources\Mic\01-06-17.png" />
+    <Content Include="Resources\Mic\01-06-18.png" />
+    <Content Include="Resources\Mic\01-06-19.png" />
+    <Content Include="Resources\Mic\01-06-20.png" />
+    <Content Include="Resources\Mic\01-06-21.png" />
+    <Content Include="Resources\Mic\01-06-22.png" />
+    <Content Include="Resources\Mic\01-06-23.png" />
+    <Content Include="Resources\Mic\01-07-01.png" />
+    <Content Include="Resources\Mic\01-07-02.png" />
+    <Content Include="Resources\Mic\01-07-03.png" />
+    <Content Include="Resources\Mic\01-07-04.png" />
+    <Content Include="Resources\Mic\01-07-05.png" />
+    <Content Include="Resources\Mic\01-07-06.png" />
+    <Content Include="Resources\Mic\01-07-07.png" />
+    <Content Include="Resources\Mic\01-07-08.png" />
+    <Content Include="Resources\Mic\01-07-09.png" />
+    <Content Include="Resources\Mic\01-07-10.png" />
+    <Content Include="Resources\Mic\01-07-11.png" />
+    <Content Include="Resources\Mic\01-07-12.png" />
+    <Content Include="Resources\Mic\01-07-13.png" />
+    <Content Include="Resources\Mic\01-07-14.png" />
+    <Content Include="Resources\Mic\01-07-15.png" />
+    <Content Include="Resources\Mic\01-07-16.png" />
+    <Content Include="Resources\Mic\01-07-17.png" />
+    <Content Include="Resources\Mic\01-07-18.png" />
+    <Content Include="Resources\Mic\01-07-19.png" />
+    <Content Include="Resources\Mic\01-07-20.png" />
+    <Content Include="Resources\Mic\01-07-21.png" />
+    <Content Include="Resources\Mic\01-07-22.png" />
+    <Content Include="Resources\Mic\01-07-23.png" />
+    <Content Include="Resources\Mic\01-08-01.png" />
+    <Content Include="Resources\Mic\01-08-02.png" />
+    <Content Include="Resources\Mic\01-08-03.png" />
+    <Content Include="Resources\Mic\01-08-04.png" />
+    <Content Include="Resources\Mic\01-08-05.png" />
+    <Content Include="Resources\Mic\01-08-06.png" />
+    <Content Include="Resources\Mic\01-08-07.png" />
+    <Content Include="Resources\Mic\01-08-08.png" />
+    <Content Include="Resources\Mic\01-08-09.png" />
+    <Content Include="Resources\Mic\01-08-10.png" />
+    <Content Include="Resources\Mic\01-08-11.png" />
+    <Content Include="Resources\Mic\01-08-12.png" />
+    <Content Include="Resources\Mic\01-08-13.png" />
+    <Content Include="Resources\Mic\01-08-14.png" />
+    <Content Include="Resources\Mic\01-08-15.png" />
+    <Content Include="Resources\Mic\01-08-16.png" />
+    <Content Include="Resources\Mic\01-08-17.png" />
+    <Content Include="Resources\Mic\01-08-18.png" />
+    <Content Include="Resources\Mic\01-08-19.png" />
+    <Content Include="Resources\Mic\01-08-20.png" />
+    <Content Include="Resources\Mic\01-08-21.png" />
+    <Content Include="Resources\Mic\01-08-22.png" />
+    <Content Include="Resources\Mic\01-08-23.png" />
+    <Content Include="Resources\Mic\01-09-01.png" />
+    <Content Include="Resources\Mic\01-09-02.png" />
+    <Content Include="Resources\Mic\01-09-03.png" />
+    <Content Include="Resources\Mic\01-09-04.png" />
+    <Content Include="Resources\Mic\01-09-05.png" />
+    <Content Include="Resources\Mic\01-09-06.png" />
+    <Content Include="Resources\Mic\01-09-07.png" />
+    <Content Include="Resources\Mic\01-09-08.png" />
+    <Content Include="Resources\Mic\01-09-09.png" />
+    <Content Include="Resources\Mic\01-09-10.png" />
+    <Content Include="Resources\Mic\01-09-11.png" />
+    <Content Include="Resources\Mic\01-09-12.png" />
+    <Content Include="Resources\Mic\01-09-13.png" />
+    <Content Include="Resources\Mic\01-09-14.png" />
+    <Content Include="Resources\Mic\01-09-15.png" />
+    <Content Include="Resources\Mic\01-09-16.png" />
+    <Content Include="Resources\Mic\01-09-17.png" />
+    <Content Include="Resources\Mic\01-09-18.png" />
+    <Content Include="Resources\Mic\01-09-19.png" />
+    <Content Include="Resources\Mic\01-09-20.png" />
+    <Content Include="Resources\Mic\01-09-21.png" />
+    <Content Include="Resources\Mic\01-09-22.png" />
+    <Content Include="Resources\Mic\01-09-23.png" />
+    <Content Include="Resources\Mic\01-10-01.png" />
+    <Content Include="Resources\Mic\01-10-02.png" />
+    <Content Include="Resources\Mic\01-10-03.png" />
+    <Content Include="Resources\Mic\01-10-04.png" />
+    <Content Include="Resources\Mic\01-10-05.png" />
+    <Content Include="Resources\Mic\01-10-06.png" />
+    <Content Include="Resources\Mic\01-10-07.png" />
+    <Content Include="Resources\Mic\01-10-08.png" />
+    <Content Include="Resources\Mic\01-10-09.png" />
+    <Content Include="Resources\Mic\01-10-10.png" />
+    <Content Include="Resources\Mic\01-10-11.png" />
+    <Content Include="Resources\Mic\01-10-12.png" />
+    <Content Include="Resources\Mic\01-10-13.png" />
+    <Content Include="Resources\Mic\01-10-14.png" />
+    <Content Include="Resources\Mic\01-10-15.png" />
+    <Content Include="Resources\Mic\01-10-16.png" />
+    <Content Include="Resources\Mic\01-10-17.png" />
+    <Content Include="Resources\Mic\01-10-18.png" />
+    <Content Include="Resources\Mic\01-10-19.png" />
+    <Content Include="Resources\Mic\01-10-20.png" />
+    <Content Include="Resources\Mic\01-10-21.png" />
+    <Content Include="Resources\Mic\01-10-22.png" />
+    <Content Include="Resources\Mic\01-10-23.png" />
+    <Content Include="Resources\Mic\01-11-01.png" />
+    <Content Include="Resources\Mic\01-11-02.png" />
+    <Content Include="Resources\Mic\01-11-03.png" />
+    <Content Include="Resources\Mic\01-11-04.png" />
+    <Content Include="Resources\Mic\01-11-05.png" />
+    <Content Include="Resources\Mic\01-11-06.png" />
+    <Content Include="Resources\Mic\01-11-07.png" />
+    <Content Include="Resources\Mic\01-11-08.png" />
+    <Content Include="Resources\Mic\01-11-09.png" />
+    <Content Include="Resources\Mic\01-11-10.png" />
+    <Content Include="Resources\Mic\01-11-11.png" />
+    <Content Include="Resources\Mic\01-11-12.png" />
+    <Content Include="Resources\Mic\01-11-13.png" />
+    <Content Include="Resources\Mic\01-11-14.png" />
+    <Content Include="Resources\Mic\01-11-15.png" />
+    <Content Include="Resources\Mic\01-11-16.png" />
+    <Content Include="Resources\Mic\01-11-17.png" />
+    <Content Include="Resources\Mic\01-11-18.png" />
+    <Content Include="Resources\Mic\01-11-19.png" />
+    <Content Include="Resources\Mic\01-11-20.png" />
+    <Content Include="Resources\Mic\01-11-21.png" />
+    <Content Include="Resources\Mic\01-11-22.png" />
+    <Content Include="Resources\Mic\01-11-23.png" />
+    <Content Include="Resources\Mic\01-12-01.png" />
+    <Content Include="Resources\Mic\01-12-02.png" />
+    <Content Include="Resources\Mic\01-12-03.png" />
+    <Content Include="Resources\Mic\01-12-04.png" />
+    <Content Include="Resources\Mic\01-12-05.png" />
+    <Content Include="Resources\Mic\01-12-06.png" />
+    <Content Include="Resources\Mic\01-12-07.png" />
+    <Content Include="Resources\Mic\01-12-08.png" />
+    <Content Include="Resources\Mic\01-12-09.png" />
+    <Content Include="Resources\Mic\01-12-10.png" />
+    <Content Include="Resources\Mic\01-12-11.png" />
+    <Content Include="Resources\Mic\01-12-12.png" />
+    <Content Include="Resources\Mic\01-12-13.png" />
+    <Content Include="Resources\Mic\01-12-14.png" />
+    <Content Include="Resources\Mic\01-12-15.png" />
+    <Content Include="Resources\Mic\01-12-16.png" />
+    <Content Include="Resources\Mic\01-12-17.png" />
+    <Content Include="Resources\Mic\01-12-18.png" />
+    <Content Include="Resources\Mic\01-12-19.png" />
+    <Content Include="Resources\Mic\01-12-20.png" />
+    <Content Include="Resources\Mic\01-12-21.png" />
+    <Content Include="Resources\Mic\01-12-22.png" />
+    <Content Include="Resources\Mic\01-12-23.png" />
+    <Content Include="Resources\Pause-Normal-icon.png" />
+    <Content Include="Resources\Picture1.png" />
+    <Content Include="Resources\Play-Normal-icon.png" />
+    <Content Include="Resources\Premii\1.png" />
+    <Content Include="Resources\Premii\2.png" />
+    <Content Include="Resources\Premii\3.png" />
+    <Content Include="Resources\Premii\4.png" />
+    <Content Include="Resources\Premii\5.png" />
+    <Content Include="Resources\Premii\6.png" />
+    <Content Include="Resources\Premii\7.png" />
+    <Content Include="Resources\Premii\8.png" />
+    <Content Include="Resources\score.png" />
+    <Content Include="Resources\smallPuzzle.png" />
+    <Content Include="Resources\Stop-Normal-icon.png" />
+    <Content Include="Resources\Top\bigPuzzle.png" />
+    <Content Include="Resources\Top\blocks.png" />
+    <Content Include="Resources\Top\cups.png" />
+    <Content Include="Resources\Top\hangman.png" />
+    <Content Include="Resources\Top\score.png" />
+    <Content Include="Resources\Top\smallPuzzle.png" />
+    <None Include="Service References\ServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ServiceReference\configuration.svcinfo" />
+    <None Include="Service References\ServiceReference\configuration91.svcinfo" />
+    <None Include="Service References\ServiceReference\ServerService.disco" />
+    <Content Include="Sounds\applause-2.wav" />
+    <Content Include="Sounds\beep-3.wav" />
+    <Content Include="Sounds\button-14.wav" />
+    <Content Include="Sounds\button-9.wav" />
+    <Content Include="Sounds\colaj.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ServiceReference\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

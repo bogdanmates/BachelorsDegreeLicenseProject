@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServerService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8069/ServerService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8069/ServerService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8069/ServerService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/InvatamSaCalculam.Server.Models" />
+      <xsd:import schemaLocation="http://localhost:8069/ServerService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" />
+      <xsd:import schemaLocation="http://localhost:8069/ServerService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServerService_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="IServerService_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServerService_Register_InputMessage">
+    <wsdl:part name="parameters" element="tns:Register" />
+  </wsdl:message>
+  <wsdl:message name="IServerService_Register_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServerService_IsTeacher_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsTeacher" />
+  </wsdl:message>
+  <wsdl:message name="IServerService_IsTeacher_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsTeacherResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServerService_GetScore_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetScore" />
+  </wsdl:message>
+  <wsdl:message name="IServerService_GetScore_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetScoreResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServerService_AddCup_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddCup" />
+  </wsdl:message>
+  <wsdl:message name="IServerService_AddCup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddCupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServerService_AddMedal_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddMedal" />
+  </wsdl:message>
+  <wsdl:message name="IServerService_AddMedal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddMedalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServerService_GetCup_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCup" />
+  </wsdl:message>
+  <wsdl:message name="IServerService_GetCup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServerService_GetMedal_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMedal" />
+  </wsdl:message>
+  <wsdl:message name="IServerService_GetMedal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMedalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServerService_GetTopPlayers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTopPlayers" />
+  </wsdl:message>
+  <wsdl:message name="IServerService_GetTopPlayers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTopPlayersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServerService_GetBlocksScore_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBlocksScore" />
+  </wsdl:message>
+  <wsdl:message name="IServerService_GetBlocksScore_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBlocksScoreResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServerService_GetHangmanScore_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHangmanScore" />
+  </wsdl:message>
+  <wsdl:message name="IServerService_GetHangmanScore_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHangmanScoreResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServerService_SetBlocksScore_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetBlocksScore" />
+  </wsdl:message>
+  <wsdl:message name="IServerService_SetBlocksScore_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetBlocksScoreResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServerService_SetHangmanScore_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetHangmanScore" />
+  </wsdl:message>
+  <wsdl:message name="IServerService_SetHangmanScore_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetHangmanScoreResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServerService_Reset_InputMessage">
+    <wsdl:part name="parameters" element="tns:Reset" />
+  </wsdl:message>
+  <wsdl:message name="IServerService_Reset_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ResetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServerService_GetTeachers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTeachers" />
+  </wsdl:message>
+  <wsdl:message name="IServerService_GetTeachers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTeachersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServerService_GetTeachersStudents_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTeachersStudents" />
+  </wsdl:message>
+  <wsdl:message name="IServerService_GetTeachersStudents_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTeachersStudentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServerService_Delete_InputMessage">
+    <wsdl:part name="parameters" element="tns:Delete" />
+  </wsdl:message>
+  <wsdl:message name="IServerService_Delete_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServerService_CheckConnection_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckConnection" />
+  </wsdl:message>
+  <wsdl:message name="IServerService_CheckConnection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckConnectionResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServerService">
+    <wsdl:operation name="Login">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServerService/Login" message="tns:IServerService_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServerService/LoginResponse" message="tns:IServerService_Login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Register">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServerService/Register" message="tns:IServerService_Register_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServerService/RegisterResponse" message="tns:IServerService_Register_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsTeacher">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServerService/IsTeacher" message="tns:IServerService_IsTeacher_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServerService/IsTeacherResponse" message="tns:IServerService_IsTeacher_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetScore">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServerService/GetScore" message="tns:IServerService_GetScore_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServerService/GetScoreResponse" message="tns:IServerService_GetScore_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddCup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServerService/AddCup" message="tns:IServerService_AddCup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServerService/AddCupResponse" message="tns:IServerService_AddCup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddMedal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServerService/AddMedal" message="tns:IServerService_AddMedal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServerService/AddMedalResponse" message="tns:IServerService_AddMedal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServerService/GetCup" message="tns:IServerService_GetCup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServerService/GetCupResponse" message="tns:IServerService_GetCup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMedal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServerService/GetMedal" message="tns:IServerService_GetMedal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServerService/GetMedalResponse" message="tns:IServerService_GetMedal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTopPlayers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServerService/GetTopPlayers" message="tns:IServerService_GetTopPlayers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServerService/GetTopPlayersResponse" message="tns:IServerService_GetTopPlayers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBlocksScore">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServerService/GetBlocksScore" message="tns:IServerService_GetBlocksScore_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServerService/GetBlocksScoreResponse" message="tns:IServerService_GetBlocksScore_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHangmanScore">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServerService/GetHangmanScore" message="tns:IServerService_GetHangmanScore_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServerService/GetHangmanScoreResponse" message="tns:IServerService_GetHangmanScore_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetBlocksScore">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServerService/SetBlocksScore" message="tns:IServerService_SetBlocksScore_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServerService/SetBlocksScoreResponse" message="tns:IServerService_SetBlocksScore_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetHangmanScore">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServerService/SetHangmanScore" message="tns:IServerService_SetHangmanScore_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServerService/SetHangmanScoreResponse" message="tns:IServerService_SetHangmanScore_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Reset">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServerService/Reset" message="tns:IServerService_Reset_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServerService/ResetResponse" message="tns:IServerService_Reset_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTeachers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServerService/GetTeachers" message="tns:IServerService_GetTeachers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServerService/GetTeachersResponse" message="tns:IServerService_GetTeachers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTeachersStudents">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServerService/GetTeachersStudents" message="tns:IServerService_GetTeachersStudents_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServerService/GetTeachersStudentsResponse" message="tns:IServerService_GetTeachersStudents_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServerService/Delete" message="tns:IServerService_Delete_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServerService/DeleteResponse" message="tns:IServerService_Delete_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckConnection">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServerService/CheckConnection" message="tns:IServerService_CheckConnection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServerService/CheckConnectionResponse" message="tns:IServerService_CheckConnection_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServerService" type="tns:IServerService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://tempuri.org/IServerService/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Register">
+      <soap:operation soapAction="http://tempuri.org/IServerService/Register" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsTeacher">
+      <soap:operation soapAction="http://tempuri.org/IServerService/IsTeacher" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetScore">
+      <soap:operation soapAction="http://tempuri.org/IServerService/GetScore" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddCup">
+      <soap:operation soapAction="http://tempuri.org/IServerService/AddCup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddMedal">
+      <soap:operation soapAction="http://tempuri.org/IServerService/AddMedal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCup">
+      <soap:operation soapAction="http://tempuri.org/IServerService/GetCup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMedal">
+      <soap:operation soapAction="http://tempuri.org/IServerService/GetMedal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTopPlayers">
+      <soap:operation soapAction="http://tempuri.org/IServerService/GetTopPlayers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBlocksScore">
+      <soap:operation soapAction="http://tempuri.org/IServerService/GetBlocksScore" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHangmanScore">
+      <soap:operation soapAction="http://tempuri.org/IServerService/GetHangmanScore" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetBlocksScore">
+      <soap:operation soapAction="http://tempuri.org/IServerService/SetBlocksScore" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetHangmanScore">
+      <soap:operation soapAction="http://tempuri.org/IServerService/SetHangmanScore" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Reset">
+      <soap:operation soapAction="http://tempuri.org/IServerService/Reset" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTeachers">
+      <soap:operation soapAction="http://tempuri.org/IServerService/GetTeachers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTeachersStudents">
+      <soap:operation soapAction="http://tempuri.org/IServerService/GetTeachersStudents" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <soap:operation soapAction="http://tempuri.org/IServerService/Delete" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckConnection">
+      <soap:operation soapAction="http://tempuri.org/IServerService/CheckConnection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServerService">
+    <wsdl:port name="BasicHttpBinding_IServerService" binding="tns:BasicHttpBinding_IServerService">
+      <soap:address location="http://localhost:8069/ServerService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

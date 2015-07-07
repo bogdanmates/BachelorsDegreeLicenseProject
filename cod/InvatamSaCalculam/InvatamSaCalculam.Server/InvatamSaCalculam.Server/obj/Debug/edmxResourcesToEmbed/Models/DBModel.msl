@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="InvatamSaCalculamModelStoreContainer" CdmEntityContainer="InvatamSaCalculamEntities">
+    <EntitySetMapping Name="UserBigMedals">
+      <EntityTypeMapping TypeName="InvatamSaCalculamModel.UserBigMedal">
+        <MappingFragment StoreEntitySet="UserBigMedals">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="GoldMedals" ColumnName="GoldMedals" />
+          <ScalarProperty Name="SilverMedals" ColumnName="SilverMedals" />
+          <ScalarProperty Name="BronzeMedals" ColumnName="BronzeMedals" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserCups">
+      <EntityTypeMapping TypeName="InvatamSaCalculamModel.UserCup">
+        <MappingFragment StoreEntitySet="UserCups">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="AddCup" ColumnName="AddCup" />
+          <ScalarProperty Name="DiffCup" ColumnName="DiffCup" />
+          <ScalarProperty Name="DivCup" ColumnName="DivCup" />
+          <ScalarProperty Name="MulCup" ColumnName="MulCup" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserGames">
+      <EntityTypeMapping TypeName="InvatamSaCalculamModel.UserGame">
+        <MappingFragment StoreEntitySet="UserGames">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Hangman" ColumnName="Hangman" />
+          <ScalarProperty Name="Blocks" ColumnName="Blocks" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="InvatamSaCalculamModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="IsTeacher" ColumnName="IsTeacher" />
+          <ScalarProperty Name="TeacherId" ColumnName="TeacherId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserScores">
+      <EntityTypeMapping TypeName="InvatamSaCalculamModel.UserScore">
+        <MappingFragment StoreEntitySet="UserScores">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Score" ColumnName="Score" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserSmallMedals">
+      <EntityTypeMapping TypeName="InvatamSaCalculamModel.UserSmallMedal">
+        <MappingFragment StoreEntitySet="UserSmallMedals">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="GoldMedals" ColumnName="GoldMedals" />
+          <ScalarProperty Name="SilverMedals" ColumnName="SilverMedals" />
+          <ScalarProperty Name="BronzeMedals" ColumnName="BronzeMedals" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

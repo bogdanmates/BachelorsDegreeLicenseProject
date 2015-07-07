@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsStudents" targetNamespace="http://tempuri.org/dsStudents.xsd" xmlns:mstns="http://tempuri.org/dsStudents.xsd" xmlns="http://tempuri.org/dsStudents.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsStudents" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsStudents" msprop:Generator_UserDSName="dsStudents">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Students" msprop:Generator_TableClassName="StudentsDataTable" msprop:Generator_TableVarName="tableStudents" msprop:Generator_TablePropName="Students" msprop:Generator_RowDeletingName="StudentsRowDeleting" msprop:Generator_RowChangingName="StudentsRowChanging" msprop:Generator_RowEvHandlerName="StudentsRowChangeEventHandler" msprop:Generator_RowDeletedName="StudentsRowDeleted" msprop:Generator_UserTableName="Students" msprop:Generator_RowChangedName="StudentsRowChanged" msprop:Generator_RowEvArgName="StudentsRowChangeEvent" msprop:Generator_RowClassName="StudentsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="SmallGoldMedals" msprop:Generator_ColumnVarNameInTable="columnSmallGoldMedals" msprop:Generator_ColumnPropNameInRow="SmallGoldMedals" msprop:Generator_ColumnPropNameInTable="SmallGoldMedalsColumn" msprop:Generator_UserColumnName="SmallGoldMedals" type="xs:int" minOccurs="0" />
+              <xs:element name="SmallSilverMedals" msprop:Generator_ColumnVarNameInTable="columnSmallSilverMedals" msprop:Generator_ColumnPropNameInRow="SmallSilverMedals" msprop:Generator_ColumnPropNameInTable="SmallSilverMedalsColumn" msprop:Generator_UserColumnName="SmallSilverMedals" type="xs:int" minOccurs="0" />
+              <xs:element name="SmallBronzeMedals" msprop:Generator_ColumnVarNameInTable="columnSmallBronzeMedals" msprop:Generator_ColumnPropNameInRow="SmallBronzeMedals" msprop:Generator_ColumnPropNameInTable="SmallBronzeMedalsColumn" msprop:Generator_UserColumnName="SmallBronzeMedals" type="xs:int" minOccurs="0" />
+              <xs:element name="BigGoldMedals" msprop:Generator_ColumnVarNameInTable="columnBigGoldMedals" msprop:Generator_ColumnPropNameInRow="BigGoldMedals" msprop:Generator_ColumnPropNameInTable="BigGoldMedalsColumn" msprop:Generator_UserColumnName="BigGoldMedals" type="xs:int" minOccurs="0" />
+              <xs:element name="BigSilverMedals" msprop:Generator_ColumnVarNameInTable="columnBigSilverMedals" msprop:Generator_ColumnPropNameInRow="BigSilverMedals" msprop:Generator_ColumnPropNameInTable="BigSilverMedalsColumn" msprop:Generator_UserColumnName="BigSilverMedals" type="xs:int" minOccurs="0" />
+              <xs:element name="BigBronzeMedals" msprop:Generator_ColumnVarNameInTable="columnBigBronzeMedals" msprop:Generator_ColumnPropNameInRow="BigBronzeMedals" msprop:Generator_ColumnPropNameInTable="BigBronzeMedalsColumn" msprop:Generator_UserColumnName="BigBronzeMedals" type="xs:int" minOccurs="0" />
+              <xs:element name="AddCups" msprop:Generator_ColumnVarNameInTable="columnAddCups" msprop:Generator_ColumnPropNameInRow="AddCups" msprop:Generator_ColumnPropNameInTable="AddCupsColumn" msprop:Generator_UserColumnName="AddCups" type="xs:int" minOccurs="0" />
+              <xs:element name="DiffCups" msprop:Generator_ColumnVarNameInTable="columnDiffCups" msprop:Generator_ColumnPropNameInRow="DiffCups" msprop:Generator_ColumnPropNameInTable="DiffCupsColumn" msprop:Generator_UserColumnName="DiffCups" type="xs:int" minOccurs="0" />
+              <xs:element name="DivCups" msprop:Generator_ColumnVarNameInTable="columnDivCups" msprop:Generator_ColumnPropNameInRow="DivCups" msprop:Generator_ColumnPropNameInTable="DivCupsColumn" msprop:Generator_UserColumnName="DivCups" type="xs:int" minOccurs="0" />
+              <xs:element name="MulCups" msprop:Generator_ColumnVarNameInTable="columnMulCups" msprop:Generator_ColumnPropNameInRow="MulCups" msprop:Generator_ColumnPropNameInTable="MulCupsColumn" msprop:Generator_UserColumnName="MulCups" type="xs:int" minOccurs="0" />
+              <xs:element name="Score" msprop:Generator_ColumnVarNameInTable="columnScore" msprop:Generator_ColumnPropNameInRow="Score" msprop:Generator_ColumnPropNameInTable="ScoreColumn" msprop:Generator_UserColumnName="Score" type="xs:long" minOccurs="0" />
+              <xs:element name="Hangman" msprop:Generator_ColumnVarNameInTable="columnHangman" msprop:Generator_ColumnPropNameInRow="Hangman" msprop:Generator_ColumnPropNameInTable="HangmanColumn" msprop:Generator_UserColumnName="Hangman" type="xs:int" minOccurs="0" />
+              <xs:element name="Blocks" msprop:Generator_ColumnVarNameInTable="columnBlocks" msprop:Generator_ColumnPropNameInRow="Blocks" msprop:Generator_ColumnPropNameInTable="BlocksColumn" msprop:Generator_UserColumnName="Blocks" type="xs:int" minOccurs="0" />
+              <xs:element name="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" minOccurs="0" />
+              <xs:element name="Reset" msprop:Generator_ColumnVarNameInTable="columnReset" msprop:Generator_ColumnPropNameInRow="Reset" msprop:Generator_ColumnPropNameInTable="ResetColumn" msprop:Generator_UserColumnName="Reset" type="xs:string" default="Reset" minOccurs="0" />
+              <xs:element name="Delete" msprop:Generator_ColumnVarNameInTable="columnDelete" msprop:Generator_ColumnPropNameInRow="Delete" msprop:Generator_ColumnPropNameInTable="DeleteColumn" msprop:Generator_UserColumnName="Delete" type="xs:string" default="X" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

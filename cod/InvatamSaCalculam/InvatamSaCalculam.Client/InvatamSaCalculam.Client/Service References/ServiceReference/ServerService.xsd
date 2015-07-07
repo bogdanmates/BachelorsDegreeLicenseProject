@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/InvatamSaCalculam.Server.Models" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/InvatamSaCalculam.Server.Models" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8069/ServerService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" />
+  <xs:complexType name="ArrayOfUser">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="User" nillable="true" type="tns:User" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUser" nillable="true" type="tns:ArrayOfUser" />
+  <xs:complexType name="User">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q1:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Id" type="xs:int" />
+          <xs:element minOccurs="0" name="IsTeacher" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TeacherId" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="UserBigMedals" nillable="true" type="tns:ArrayOfUserBigMedal" />
+          <xs:element minOccurs="0" name="UserCups" nillable="true" type="tns:ArrayOfUserCup" />
+          <xs:element minOccurs="0" name="UserGames" nillable="true" type="tns:ArrayOfUserGame" />
+          <xs:element minOccurs="0" name="UserScores" nillable="true" type="tns:ArrayOfUserScore" />
+          <xs:element minOccurs="0" name="UserSmallMedals" nillable="true" type="tns:ArrayOfUserSmallMedal" />
+          <xs:element minOccurs="0" name="Username" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="User" nillable="true" type="tns:User" />
+  <xs:complexType name="ArrayOfUserBigMedal">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UserBigMedal" nillable="true" type="tns:UserBigMedal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUserBigMedal" nillable="true" type="tns:ArrayOfUserBigMedal" />
+  <xs:complexType name="UserBigMedal">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q2:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BronzeMedals" type="xs:int" />
+          <xs:element minOccurs="0" name="GoldMedals" type="xs:int" />
+          <xs:element minOccurs="0" name="Id" type="xs:int" />
+          <xs:element minOccurs="0" name="SilverMedals" type="xs:int" />
+          <xs:element minOccurs="0" name="User" nillable="true" type="tns:User" />
+          <xs:element minOccurs="0" name="UserId" type="xs:int" />
+          <xs:element minOccurs="0" name="UserReference" nillable="true" type="q2:EntityReferenceOfUseroY1BxOq7" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UserBigMedal" nillable="true" type="tns:UserBigMedal" />
+  <xs:complexType name="ArrayOfUserCup">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UserCup" nillable="true" type="tns:UserCup" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUserCup" nillable="true" type="tns:ArrayOfUserCup" />
+  <xs:complexType name="UserCup">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q3:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AddCup" type="xs:int" />
+          <xs:element minOccurs="0" name="DiffCup" type="xs:int" />
+          <xs:element minOccurs="0" name="DivCup" type="xs:int" />
+          <xs:element minOccurs="0" name="Id" type="xs:int" />
+          <xs:element minOccurs="0" name="MulCup" type="xs:int" />
+          <xs:element minOccurs="0" name="User" nillable="true" type="tns:User" />
+          <xs:element minOccurs="0" name="UserId" type="xs:int" />
+          <xs:element minOccurs="0" name="UserReference" nillable="true" type="q3:EntityReferenceOfUseroY1BxOq7" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UserCup" nillable="true" type="tns:UserCup" />
+  <xs:complexType name="ArrayOfUserGame">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UserGame" nillable="true" type="tns:UserGame" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUserGame" nillable="true" type="tns:ArrayOfUserGame" />
+  <xs:complexType name="UserGame">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q4:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Blocks" type="xs:int" />
+          <xs:element minOccurs="0" name="Hangman" type="xs:int" />
+          <xs:element minOccurs="0" name="Id" type="xs:int" />
+          <xs:element minOccurs="0" name="User" nillable="true" type="tns:User" />
+          <xs:element minOccurs="0" name="UserId" type="xs:int" />
+          <xs:element minOccurs="0" name="UserReference" nillable="true" type="q4:EntityReferenceOfUseroY1BxOq7" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UserGame" nillable="true" type="tns:UserGame" />
+  <xs:complexType name="ArrayOfUserScore">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UserScore" nillable="true" type="tns:UserScore" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUserScore" nillable="true" type="tns:ArrayOfUserScore" />
+  <xs:complexType name="UserScore">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q5:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Id" type="xs:int" />
+          <xs:element minOccurs="0" name="Score" type="xs:long" />
+          <xs:element minOccurs="0" name="User" nillable="true" type="tns:User" />
+          <xs:element minOccurs="0" name="UserId" type="xs:int" />
+          <xs:element minOccurs="0" name="UserReference" nillable="true" type="q5:EntityReferenceOfUseroY1BxOq7" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UserScore" nillable="true" type="tns:UserScore" />
+  <xs:complexType name="ArrayOfUserSmallMedal">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UserSmallMedal" nillable="true" type="tns:UserSmallMedal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUserSmallMedal" nillable="true" type="tns:ArrayOfUserSmallMedal" />
+  <xs:complexType name="UserSmallMedal">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q6:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BronzeMedals" type="xs:int" />
+          <xs:element minOccurs="0" name="GoldMedals" type="xs:int" />
+          <xs:element minOccurs="0" name="Id" type="xs:int" />
+          <xs:element minOccurs="0" name="SilverMedals" type="xs:int" />
+          <xs:element minOccurs="0" name="User" nillable="true" type="tns:User" />
+          <xs:element minOccurs="0" name="UserId" type="xs:int" />
+          <xs:element minOccurs="0" name="UserReference" nillable="true" type="q6:EntityReferenceOfUseroY1BxOq7" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="UserSmallMedal" nillable="true" type="tns:UserSmallMedal" />
+</xs:schema>

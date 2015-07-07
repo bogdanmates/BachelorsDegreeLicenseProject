@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="InvatamSaCalculam.Client.LandingPages.Helpers.TopHeader.TopHeaderView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+              d:DesignHeight="60" d:DesignWidth="700">
+    <Border Background="#357EC7" CornerRadius="4">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" Text="Rank" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" FontWeight="SemiBold"/>
+            <TextBlock Grid.Column="1" Text="Username" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" FontWeight="SemiBold"/>
+            <TextBlock Grid.Column="2" Grid.ColumnSpan="2" Text="Cups" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" FontWeight="SemiBold"/>
+            <TextBlock Grid.Column="4" Grid.ColumnSpan="2" Text="Small Puzzle" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" FontWeight="SemiBold"/>
+            <TextBlock Grid.Column="6" Grid.ColumnSpan="2" Text="Big Puzzle" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" FontWeight="SemiBold"/>
+            <TextBlock Grid.Column="8" Grid.ColumnSpan="2" Text="Blocks" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" FontWeight="SemiBold"/>
+            <TextBlock Grid.Column="10" Grid.ColumnSpan="2" Text="Hangman" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" FontWeight="SemiBold"/>
+            <TextBlock Grid.Column="12" Grid.ColumnSpan="2" Text="Score" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="White" FontWeight="SemiBold"/>
+        </Grid>
+    </Border>
+</UserControl>

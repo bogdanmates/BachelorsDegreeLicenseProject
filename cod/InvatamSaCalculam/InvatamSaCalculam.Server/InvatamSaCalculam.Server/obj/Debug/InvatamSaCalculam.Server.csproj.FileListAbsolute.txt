@@ -1,0 +1,10 @@
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Server\InvatamSaCalculam.Server\bin\InvatamSaCalculam.Server.dll
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Server\InvatamSaCalculam.Server\bin\InvatamSaCalculam.Server.pdb
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Server\InvatamSaCalculam.Server\obj\Debug\InvatamSaCalculam.Server.dll
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Server\InvatamSaCalculam.Server\obj\Debug\InvatamSaCalculam.Server.pdb
+D:\Work\InvatamSaCalculam\InvatamSaCalculam.Server\InvatamSaCalculam.Server\obj\Debug\InvatamSaCalculam.Server.csprojResolveAssemblyReference.cache
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Server\InvatamSaCalculam.Server\bin\InvatamSaCalculam.Server.dll
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Server\InvatamSaCalculam.Server\bin\InvatamSaCalculam.Server.pdb
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Server\InvatamSaCalculam.Server\obj\Debug\InvatamSaCalculam.Server.csprojResolveAssemblyReference.cache
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Server\InvatamSaCalculam.Server\obj\Debug\InvatamSaCalculam.Server.dll
+C:\Users\Bogdan\Dropbox\Licenta\cod final\v2\InvatamSaCalculam\InvatamSaCalculam.Server\InvatamSaCalculam.Server\obj\Debug\InvatamSaCalculam.Server.pdb

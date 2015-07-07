@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="InvatamSaCalculamModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="InvatamSaCalculamEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="UserBigMedals" EntityType="InvatamSaCalculamModel.UserBigMedal" />
+    <EntitySet Name="UserCups" EntityType="InvatamSaCalculamModel.UserCup" />
+    <EntitySet Name="UserGames" EntityType="InvatamSaCalculamModel.UserGame" />
+    <EntitySet Name="Users" EntityType="InvatamSaCalculamModel.User" />
+    <EntitySet Name="UserScores" EntityType="InvatamSaCalculamModel.UserScore" />
+    <EntitySet Name="UserSmallMedals" EntityType="InvatamSaCalculamModel.UserSmallMedal" />
+    <AssociationSet Name="FK_UserBigMedalUser" Association="InvatamSaCalculamModel.FK_UserBigMedalUser">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserBigMedals" EntitySet="UserBigMedals" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserCupUser" Association="InvatamSaCalculamModel.FK_UserCupUser">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserCups" EntitySet="UserCups" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserGameUser" Association="InvatamSaCalculamModel.FK_UserGameUser">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserGames" EntitySet="UserGames" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserScoreUser" Association="InvatamSaCalculamModel.FK_UserScoreUser">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserScores" EntitySet="UserScores" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserSmallMedalUser" Association="InvatamSaCalculamModel.FK_UserSmallMedalUser">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserSmallMedals" EntitySet="UserSmallMedals" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="UserBigMedal">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="GoldMedals" Type="Int32" Nullable="false" />
+    <Property Name="SilverMedals" Type="Int32" Nullable="false" />
+    <Property Name="BronzeMedals" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="InvatamSaCalculamModel.FK_UserBigMedalUser" FromRole="UserBigMedals" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="UserCup">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="AddCup" Type="Int32" Nullable="false" />
+    <Property Name="DiffCup" Type="Int32" Nullable="false" />
+    <Property Name="DivCup" Type="Int32" Nullable="false" />
+    <Property Name="MulCup" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="InvatamSaCalculamModel.FK_UserCupUser" FromRole="UserCups" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="UserGame">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="Hangman" Type="Int32" Nullable="false" />
+    <Property Name="Blocks" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="InvatamSaCalculamModel.FK_UserGameUser" FromRole="UserGames" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Username" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Password" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="IsTeacher" Type="Boolean" />
+    <Property Name="TeacherId" Type="Int32" />
+    <NavigationProperty Name="UserBigMedals" Relationship="InvatamSaCalculamModel.FK_UserBigMedalUser" FromRole="Users" ToRole="UserBigMedals" />
+    <NavigationProperty Name="UserCups" Relationship="InvatamSaCalculamModel.FK_UserCupUser" FromRole="Users" ToRole="UserCups" />
+    <NavigationProperty Name="UserGames" Relationship="InvatamSaCalculamModel.FK_UserGameUser" FromRole="Users" ToRole="UserGames" />
+    <NavigationProperty Name="UserScores" Relationship="InvatamSaCalculamModel.FK_UserScoreUser" FromRole="Users" ToRole="UserScores" />
+    <NavigationProperty Name="UserSmallMedals" Relationship="InvatamSaCalculamModel.FK_UserSmallMedalUser" FromRole="Users" ToRole="UserSmallMedals" />
+  </EntityType>
+  <EntityType Name="UserScore">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="Score" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="InvatamSaCalculamModel.FK_UserScoreUser" FromRole="UserScores" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="UserSmallMedal">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="GoldMedals" Type="Int32" Nullable="false" />
+    <Property Name="SilverMedals" Type="Int32" Nullable="false" />
+    <Property Name="BronzeMedals" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="InvatamSaCalculamModel.FK_UserSmallMedalUser" FromRole="UserSmallMedals" ToRole="Users" />
+  </EntityType>
+  <Association Name="FK_UserBigMedalUser">
+    <End Role="Users" Type="InvatamSaCalculamModel.User" Multiplicity="1" />
+    <End Role="UserBigMedals" Type="InvatamSaCalculamModel.UserBigMedal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserBigMedals">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserCupUser">
+    <End Role="Users" Type="InvatamSaCalculamModel.User" Multiplicity="1" />
+    <End Role="UserCups" Type="InvatamSaCalculamModel.UserCup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserCups">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserGameUser">
+    <End Role="Users" Type="InvatamSaCalculamModel.User" Multiplicity="1" />
+    <End Role="UserGames" Type="InvatamSaCalculamModel.UserGame" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserGames">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserScoreUser">
+    <End Role="Users" Type="InvatamSaCalculamModel.User" Multiplicity="1" />
+    <End Role="UserScores" Type="InvatamSaCalculamModel.UserScore" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserScores">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserSmallMedalUser">
+    <End Role="Users" Type="InvatamSaCalculamModel.User" Multiplicity="1" />
+    <End Role="UserSmallMedals" Type="InvatamSaCalculamModel.UserSmallMedal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserSmallMedals">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
